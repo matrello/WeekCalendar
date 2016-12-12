@@ -259,6 +259,8 @@
     <Content Include="Icons\appbar.refresh.rest.png" />
     <Content Include="Icons\appbar.twitter.bird.dark.png" />
     <Content Include="Icons\appbar.twitter.bird.light.png" />
+    <Content Include="Icons\twitter.png" />
+    <Content Include="Icons\weekc_100.png" />
     <Content Include="Icons\weekc_300.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
