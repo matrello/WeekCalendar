@@ -17,6 +17,8 @@ using weekcc;
 
 namespace weekc
 {
+    // FM.2016.12.12 - released to the public. https://github.com/matrello/WeekCalendar
+
     public partial class MainPage : PhoneApplicationPage
     {
         const int WEEKGRID_HEADER_FONTSIZE_SMALL = 14;

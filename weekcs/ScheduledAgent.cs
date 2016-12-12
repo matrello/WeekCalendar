@@ -9,6 +9,8 @@ using weekcs.Languages;
 
 namespace weekcs
 {
+    // FM.2016.12.12 - released to the public. https://github.com/matrello/WeekCalendar
+
     public class ScheduledAgent : ScheduledTaskAgent
     {
         private static volatile bool _classInitialized;

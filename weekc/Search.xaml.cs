@@ -22,6 +22,8 @@ using System.Windows.Navigation;
 
 namespace weekc
 {
+    // FM.2016.12.12 - released to the public. https://github.com/matrello/WeekCalendar
+
     public partial class Search : PhoneApplicationPage
     {
         const double BORDERAPPTS_HEIGHT_MARGIN = 100;

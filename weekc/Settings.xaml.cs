@@ -22,6 +22,8 @@ using System.Windows.Media.Imaging;
 
 namespace weekc
 {
+    // FM.2016.12.12 - released to the public. https://github.com/matrello/WeekCalendar
+
     public partial class Settings : PhoneApplicationPage
     {
         public Settings()

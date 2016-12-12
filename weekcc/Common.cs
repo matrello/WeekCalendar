@@ -15,6 +15,8 @@ using System.Windows;
 
 namespace weekcc
 {
+    // FM.2016.12.12 - released to the public. https://github.com/matrello/WeekCalendar
+
     [DataContract]
     public class AccountSetting
     {

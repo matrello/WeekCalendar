@@ -11,6 +11,8 @@ using System.Windows.Shapes;
 
 namespace weekcs.Languages
 {
+    // FM.2016.12.12 - released to the public. https://github.com/matrello/WeekCalendar
+
     public class LocalizedStrings
     {
         private static readonly Strings _strings = new Strings();
