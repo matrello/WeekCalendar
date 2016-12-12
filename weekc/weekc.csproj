@@ -1,0 +1,1815 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCFEFC5B-D0F9-42CE-99E8-F08EE2873401}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>weekc</RootNamespace>
+    <AssemblyName>weekc</AssemblyName>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>
+    </SilverlightVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>it-IT%3bde-DE%3bfr-FR</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>weekc_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>weekc.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;DEBUG_AGENT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugFakeAppts|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugFakeAppts\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;FAKE_APPOINTMENT;DEBUG_AGENT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Debug\weekc.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget />
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget />
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget />
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget />
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DynamicOrientationChanges, Version=1.0.0.0, Culture=neutral, PublicKeyToken=feb6ffa731a0d8e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DynamicOrientationChanges.1.0.1\lib\wp71\DynamicOrientationChanges.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Maps, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WPToolkit.4.2013.06.11\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="SlickThought.Phone">
+      <HintPath>..\packages\SlickThoughtTrialManager.1.0.0\lib\sl4-wp71\SlickThought.Phone.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsPage.xaml.cs">
+      <DependentUpon>DetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\Strings.de-DE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\Strings.fr-FR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Languages\LocalizedStrings.cs" />
+    <Compile Include="Languages\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\Strings.it-IT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.it-IT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WeekGridController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DetailsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\BackgroundNWE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\BackgroundWE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\0101.de-DE.png" />
+    <Content Include="Icons\0101.en-US.png" />
+    <Content Include="Icons\0101.fr-FR.png" />
+    <Content Include="Icons\0101.it-IT.png" />
+    <Content Include="Icons\0102.de-DE.png" />
+    <Content Include="Icons\0102.en-US.png" />
+    <Content Include="Icons\0102.fr-FR.png" />
+    <Content Include="Icons\0102.it-IT.png" />
+    <Content Include="Icons\0103.de-DE.png" />
+    <Content Include="Icons\0103.en-US.png" />
+    <Content Include="Icons\0103.fr-FR.png" />
+    <Content Include="Icons\0103.it-IT.png" />
+    <Content Include="Icons\0104.de-DE.png" />
+    <Content Include="Icons\0104.en-US.png" />
+    <Content Include="Icons\0104.fr-FR.png" />
+    <Content Include="Icons\0104.it-IT.png" />
+    <Content Include="Icons\0105.de-DE.png" />
+    <Content Include="Icons\0105.en-US.png" />
+    <Content Include="Icons\0105.fr-FR.png" />
+    <Content Include="Icons\0105.it-IT.png" />
+    <Content Include="Icons\0106.de-DE.png" />
+    <Content Include="Icons\0106.en-US.png" />
+    <Content Include="Icons\0106.fr-FR.png" />
+    <Content Include="Icons\0106.it-IT.png" />
+    <Content Include="Icons\0107.de-DE.png" />
+    <Content Include="Icons\0107.en-US.png" />
+    <Content Include="Icons\0107.fr-FR.png" />
+    <Content Include="Icons\0107.it-IT.png" />
+    <Content Include="Icons\0108.de-DE.png" />
+    <Content Include="Icons\0108.en-US.png" />
+    <Content Include="Icons\0108.fr-FR.png" />
+    <Content Include="Icons\0108.it-IT.png" />
+    <Content Include="Icons\0109.de-DE.png" />
+    <Content Include="Icons\0109.en-US.png" />
+    <Content Include="Icons\0109.fr-FR.png" />
+    <Content Include="Icons\0109.it-IT.png" />
+    <Content Include="Icons\0110.de-DE.png" />
+    <Content Include="Icons\0110.en-US.png" />
+    <Content Include="Icons\0110.fr-FR.png" />
+    <Content Include="Icons\0110.it-IT.png" />
+    <Content Include="Icons\0111.de-DE.png" />
+    <Content Include="Icons\0111.en-US.png" />
+    <Content Include="Icons\0111.fr-FR.png" />
+    <Content Include="Icons\0111.it-IT.png" />
+    <Content Include="Icons\0112.de-DE.png" />
+    <Content Include="Icons\0112.en-US.png" />
+    <Content Include="Icons\0112.fr-FR.png" />
+    <Content Include="Icons\0112.it-IT.png" />
+    <Content Include="Icons\0113.de-DE.png" />
+    <Content Include="Icons\0113.en-US.png" />
+    <Content Include="Icons\0113.fr-FR.png" />
+    <Content Include="Icons\0113.it-IT.png" />
+    <Content Include="Icons\0114.de-DE.png" />
+    <Content Include="Icons\0114.en-US.png" />
+    <Content Include="Icons\0114.fr-FR.png" />
+    <Content Include="Icons\0114.it-IT.png" />
+    <Content Include="Icons\0115.de-DE.png" />
+    <Content Include="Icons\0115.en-US.png" />
+    <Content Include="Icons\0115.fr-FR.png" />
+    <Content Include="Icons\0115.it-IT.png" />
+    <Content Include="Icons\0116.de-DE.png" />
+    <Content Include="Icons\0116.en-US.png" />
+    <Content Include="Icons\0116.fr-FR.png" />
+    <Content Include="Icons\0116.it-IT.png" />
+    <Content Include="Icons\0117.de-DE.png" />
+    <Content Include="Icons\0117.en-US.png" />
+    <Content Include="Icons\0117.fr-FR.png" />
+    <Content Include="Icons\0117.it-IT.png" />
+    <Content Include="Icons\0118.de-DE.png" />
+    <Content Include="Icons\0118.en-US.png" />
+    <Content Include="Icons\0118.fr-FR.png" />
+    <Content Include="Icons\0118.it-IT.png" />
+    <Content Include="Icons\0119.de-DE.png" />
+    <Content Include="Icons\0119.en-US.png" />
+    <Content Include="Icons\0119.fr-FR.png" />
+    <Content Include="Icons\0119.it-IT.png" />
+    <Content Include="Icons\0120.de-DE.png" />
+    <Content Include="Icons\0120.en-US.png" />
+    <Content Include="Icons\0120.fr-FR.png" />
+    <Content Include="Icons\0120.it-IT.png" />
+    <Content Include="Icons\0121.de-DE.png" />
+    <Content Include="Icons\0121.en-US.png" />
+    <Content Include="Icons\0121.fr-FR.png" />
+    <Content Include="Icons\0121.it-IT.png" />
+    <Content Include="Icons\0122.de-DE.png" />
+    <Content Include="Icons\0122.en-US.png" />
+    <Content Include="Icons\0122.fr-FR.png" />
+    <Content Include="Icons\0122.it-IT.png" />
+    <Content Include="Icons\0123.de-DE.png" />
+    <Content Include="Icons\0123.en-US.png" />
+    <Content Include="Icons\0123.fr-FR.png" />
+    <Content Include="Icons\0123.it-IT.png" />
+    <Content Include="Icons\0124.de-DE.png" />
+    <Content Include="Icons\0124.en-US.png" />
+    <Content Include="Icons\0124.fr-FR.png" />
+    <Content Include="Icons\0124.it-IT.png" />
+    <Content Include="Icons\0125.de-DE.png" />
+    <Content Include="Icons\0125.en-US.png" />
+    <Content Include="Icons\0125.fr-FR.png" />
+    <Content Include="Icons\0125.it-IT.png" />
+    <Content Include="Icons\0126.de-DE.png" />
+    <Content Include="Icons\0126.en-US.png" />
+    <Content Include="Icons\0126.fr-FR.png" />
+    <Content Include="Icons\0126.it-IT.png" />
+    <Content Include="Icons\0127.de-DE.png" />
+    <Content Include="Icons\0127.en-US.png" />
+    <Content Include="Icons\0127.fr-FR.png" />
+    <Content Include="Icons\0127.it-IT.png" />
+    <Content Include="Icons\0128.de-DE.png" />
+    <Content Include="Icons\0128.en-US.png" />
+    <Content Include="Icons\0128.fr-FR.png" />
+    <Content Include="Icons\0128.it-IT.png" />
+    <Content Include="Icons\0129.de-DE.png" />
+    <Content Include="Icons\0129.en-US.png" />
+    <Content Include="Icons\0129.fr-FR.png" />
+    <Content Include="Icons\0129.it-IT.png" />
+    <Content Include="Icons\0130.de-DE.png" />
+    <Content Include="Icons\0130.en-US.png" />
+    <Content Include="Icons\0130.fr-FR.png" />
+    <Content Include="Icons\0130.it-IT.png" />
+    <Content Include="Icons\0131.de-DE.png" />
+    <Content Include="Icons\0131.en-US.png" />
+    <Content Include="Icons\0131.fr-FR.png" />
+    <Content Include="Icons\0131.it-IT.png" />
+    <Content Include="Icons\0201.de-DE.png" />
+    <Content Include="Icons\0201.en-US.png" />
+    <Content Include="Icons\0201.fr-FR.png" />
+    <Content Include="Icons\0201.it-IT.png" />
+    <Content Include="Icons\0202.de-DE.png" />
+    <Content Include="Icons\0202.en-US.png" />
+    <Content Include="Icons\0202.fr-FR.png" />
+    <Content Include="Icons\0202.it-IT.png" />
+    <Content Include="Icons\0203.de-DE.png" />
+    <Content Include="Icons\0203.en-US.png" />
+    <Content Include="Icons\0203.fr-FR.png" />
+    <Content Include="Icons\0203.it-IT.png" />
+    <Content Include="Icons\0204.de-DE.png" />
+    <Content Include="Icons\0204.en-US.png" />
+    <Content Include="Icons\0204.fr-FR.png" />
+    <Content Include="Icons\0204.it-IT.png" />
+    <Content Include="Icons\0205.de-DE.png" />
+    <Content Include="Icons\0205.en-US.png" />
+    <Content Include="Icons\0205.fr-FR.png" />
+    <Content Include="Icons\0205.it-IT.png" />
+    <Content Include="Icons\0206.de-DE.png" />
+    <Content Include="Icons\0206.en-US.png" />
+    <Content Include="Icons\0206.fr-FR.png" />
+    <Content Include="Icons\0206.it-IT.png" />
+    <Content Include="Icons\0207.de-DE.png" />
+    <Content Include="Icons\0207.en-US.png" />
+    <Content Include="Icons\0207.fr-FR.png" />
+    <Content Include="Icons\0207.it-IT.png" />
+    <Content Include="Icons\0208.de-DE.png" />
+    <Content Include="Icons\0208.en-US.png" />
+    <Content Include="Icons\0208.fr-FR.png" />
+    <Content Include="Icons\0208.it-IT.png" />
+    <Content Include="Icons\0209.de-DE.png" />
+    <Content Include="Icons\0209.en-US.png" />
+    <Content Include="Icons\0209.fr-FR.png" />
+    <Content Include="Icons\0209.it-IT.png" />
+    <Content Include="Icons\0210.de-DE.png" />
+    <Content Include="Icons\0210.en-US.png" />
+    <Content Include="Icons\0210.fr-FR.png" />
+    <Content Include="Icons\0210.it-IT.png" />
+    <Content Include="Icons\0211.de-DE.png" />
+    <Content Include="Icons\0211.en-US.png" />
+    <Content Include="Icons\0211.fr-FR.png" />
+    <Content Include="Icons\0211.it-IT.png" />
+    <Content Include="Icons\0212.de-DE.png" />
+    <Content Include="Icons\0212.en-US.png" />
+    <Content Include="Icons\0212.fr-FR.png" />
+    <Content Include="Icons\0212.it-IT.png" />
+    <Content Include="Icons\0213.de-DE.png" />
+    <Content Include="Icons\0213.en-US.png" />
+    <Content Include="Icons\0213.fr-FR.png" />
+    <Content Include="Icons\0213.it-IT.png" />
+    <Content Include="Icons\0214.de-DE.png" />
+    <Content Include="Icons\0214.en-US.png" />
+    <Content Include="Icons\0214.fr-FR.png" />
+    <Content Include="Icons\0214.it-IT.png" />
+    <Content Include="Icons\0215.de-DE.png" />
+    <Content Include="Icons\0215.en-US.png" />
+    <Content Include="Icons\0215.fr-FR.png" />
+    <Content Include="Icons\0215.it-IT.png" />
+    <Content Include="Icons\0216.de-DE.png" />
+    <Content Include="Icons\0216.en-US.png" />
+    <Content Include="Icons\0216.fr-FR.png" />
+    <Content Include="Icons\0216.it-IT.png" />
+    <Content Include="Icons\0217.de-DE.png" />
+    <Content Include="Icons\0217.en-US.png" />
+    <Content Include="Icons\0217.fr-FR.png" />
+    <Content Include="Icons\0217.it-IT.png" />
+    <Content Include="Icons\0218.de-DE.png" />
+    <Content Include="Icons\0218.en-US.png" />
+    <Content Include="Icons\0218.fr-FR.png" />
+    <Content Include="Icons\0218.it-IT.png" />
+    <Content Include="Icons\0219.de-DE.png" />
+    <Content Include="Icons\0219.en-US.png" />
+    <Content Include="Icons\0219.fr-FR.png" />
+    <Content Include="Icons\0219.it-IT.png" />
+    <Content Include="Icons\0220.de-DE.png" />
+    <Content Include="Icons\0220.en-US.png" />
+    <Content Include="Icons\0220.fr-FR.png" />
+    <Content Include="Icons\0220.it-IT.png" />
+    <Content Include="Icons\0221.de-DE.png" />
+    <Content Include="Icons\0221.en-US.png" />
+    <Content Include="Icons\0221.fr-FR.png" />
+    <Content Include="Icons\0221.it-IT.png" />
+    <Content Include="Icons\0222.de-DE.png" />
+    <Content Include="Icons\0222.en-US.png" />
+    <Content Include="Icons\0222.fr-FR.png" />
+    <Content Include="Icons\0222.it-IT.png" />
+    <Content Include="Icons\0223.de-DE.png" />
+    <Content Include="Icons\0223.en-US.png" />
+    <Content Include="Icons\0223.fr-FR.png" />
+    <Content Include="Icons\0223.it-IT.png" />
+    <Content Include="Icons\0224.de-DE.png" />
+    <Content Include="Icons\0224.en-US.png" />
+    <Content Include="Icons\0224.fr-FR.png" />
+    <Content Include="Icons\0224.it-IT.png" />
+    <Content Include="Icons\0225.de-DE.png" />
+    <Content Include="Icons\0225.en-US.png" />
+    <Content Include="Icons\0225.fr-FR.png" />
+    <Content Include="Icons\0225.it-IT.png" />
+    <Content Include="Icons\0226.de-DE.png" />
+    <Content Include="Icons\0226.en-US.png" />
+    <Content Include="Icons\0226.fr-FR.png" />
+    <Content Include="Icons\0226.it-IT.png" />
+    <Content Include="Icons\0227.de-DE.png" />
+    <Content Include="Icons\0227.en-US.png" />
+    <Content Include="Icons\0227.fr-FR.png" />
+    <Content Include="Icons\0227.it-IT.png" />
+    <Content Include="Icons\0228.de-DE.png" />
+    <Content Include="Icons\0228.en-US.png" />
+    <Content Include="Icons\0228.fr-FR.png" />
+    <Content Include="Icons\0228.it-IT.png" />
+    <Content Include="Icons\0229.de-DE.png" />
+    <Content Include="Icons\0229.en-US.png" />
+    <Content Include="Icons\0229.fr-FR.png" />
+    <Content Include="Icons\0229.it-IT.png" />
+    <Content Include="Icons\0301.de-DE.png" />
+    <Content Include="Icons\0301.en-US.png" />
+    <Content Include="Icons\0301.fr-FR.png" />
+    <Content Include="Icons\0301.it-IT.png" />
+    <Content Include="Icons\0302.de-DE.png" />
+    <Content Include="Icons\0302.en-US.png" />
+    <Content Include="Icons\0302.fr-FR.png" />
+    <Content Include="Icons\0302.it-IT.png" />
+    <Content Include="Icons\0303.de-DE.png" />
+    <Content Include="Icons\0303.en-US.png" />
+    <Content Include="Icons\0303.fr-FR.png" />
+    <Content Include="Icons\0303.it-IT.png" />
+    <Content Include="Icons\0304.de-DE.png" />
+    <Content Include="Icons\0304.en-US.png" />
+    <Content Include="Icons\0304.fr-FR.png" />
+    <Content Include="Icons\0304.it-IT.png" />
+    <Content Include="Icons\0305.de-DE.png" />
+    <Content Include="Icons\0305.en-US.png" />
+    <Content Include="Icons\0305.fr-FR.png" />
+    <Content Include="Icons\0305.it-IT.png" />
+    <Content Include="Icons\0306.de-DE.png" />
+    <Content Include="Icons\0306.en-US.png" />
+    <Content Include="Icons\0306.fr-FR.png" />
+    <Content Include="Icons\0306.it-IT.png" />
+    <Content Include="Icons\0307.de-DE.png" />
+    <Content Include="Icons\0307.en-US.png" />
+    <Content Include="Icons\0307.fr-FR.png" />
+    <Content Include="Icons\0307.it-IT.png" />
+    <Content Include="Icons\0308.de-DE.png" />
+    <Content Include="Icons\0308.en-US.png" />
+    <Content Include="Icons\0308.fr-FR.png" />
+    <Content Include="Icons\0308.it-IT.png" />
+    <Content Include="Icons\0309.de-DE.png" />
+    <Content Include="Icons\0309.en-US.png" />
+    <Content Include="Icons\0309.fr-FR.png" />
+    <Content Include="Icons\0309.it-IT.png" />
+    <Content Include="Icons\0310.de-DE.png" />
+    <Content Include="Icons\0310.en-US.png" />
+    <Content Include="Icons\0310.fr-FR.png" />
+    <Content Include="Icons\0310.it-IT.png" />
+    <Content Include="Icons\0311.de-DE.png" />
+    <Content Include="Icons\0311.en-US.png" />
+    <Content Include="Icons\0311.fr-FR.png" />
+    <Content Include="Icons\0311.it-IT.png" />
+    <Content Include="Icons\0312.de-DE.png" />
+    <Content Include="Icons\0312.en-US.png" />
+    <Content Include="Icons\0312.fr-FR.png" />
+    <Content Include="Icons\0312.it-IT.png" />
+    <Content Include="Icons\0313.de-DE.png" />
+    <Content Include="Icons\0313.en-US.png" />
+    <Content Include="Icons\0313.fr-FR.png" />
+    <Content Include="Icons\0313.it-IT.png" />
+    <Content Include="Icons\0314.de-DE.png" />
+    <Content Include="Icons\0314.en-US.png" />
+    <Content Include="Icons\0314.fr-FR.png" />
+    <Content Include="Icons\0314.it-IT.png" />
+    <Content Include="Icons\0315.de-DE.png" />
+    <Content Include="Icons\0315.en-US.png" />
+    <Content Include="Icons\0315.fr-FR.png" />
+    <Content Include="Icons\0315.it-IT.png" />
+    <Content Include="Icons\0316.de-DE.png" />
+    <Content Include="Icons\0316.en-US.png" />
+    <Content Include="Icons\0316.fr-FR.png" />
+    <Content Include="Icons\0316.it-IT.png" />
+    <Content Include="Icons\0317.de-DE.png" />
+    <Content Include="Icons\0317.en-US.png" />
+    <Content Include="Icons\0317.fr-FR.png" />
+    <Content Include="Icons\0317.it-IT.png" />
+    <Content Include="Icons\0318.de-DE.png" />
+    <Content Include="Icons\0318.en-US.png" />
+    <Content Include="Icons\0318.fr-FR.png" />
+    <Content Include="Icons\0318.it-IT.png" />
+    <Content Include="Icons\0319.de-DE.png" />
+    <Content Include="Icons\0319.en-US.png" />
+    <Content Include="Icons\0319.fr-FR.png" />
+    <Content Include="Icons\0319.it-IT.png" />
+    <Content Include="Icons\0320.de-DE.png" />
+    <Content Include="Icons\0320.en-US.png" />
+    <Content Include="Icons\0320.fr-FR.png" />
+    <Content Include="Icons\0320.it-IT.png" />
+    <Content Include="Icons\0321.de-DE.png" />
+    <Content Include="Icons\0321.en-US.png" />
+    <Content Include="Icons\0321.fr-FR.png" />
+    <Content Include="Icons\0321.it-IT.png" />
+    <Content Include="Icons\0322.de-DE.png" />
+    <Content Include="Icons\0322.en-US.png" />
+    <Content Include="Icons\0322.fr-FR.png" />
+    <Content Include="Icons\0322.it-IT.png" />
+    <Content Include="Icons\0323.de-DE.png" />
+    <Content Include="Icons\0323.en-US.png" />
+    <Content Include="Icons\0323.fr-FR.png" />
+    <Content Include="Icons\0323.it-IT.png" />
+    <Content Include="Icons\0324.de-DE.png" />
+    <Content Include="Icons\0324.en-US.png" />
+    <Content Include="Icons\0324.fr-FR.png" />
+    <Content Include="Icons\0324.it-IT.png" />
+    <Content Include="Icons\0325.de-DE.png" />
+    <Content Include="Icons\0325.en-US.png" />
+    <Content Include="Icons\0325.fr-FR.png" />
+    <Content Include="Icons\0325.it-IT.png" />
+    <Content Include="Icons\0326.de-DE.png" />
+    <Content Include="Icons\0326.en-US.png" />
+    <Content Include="Icons\0326.fr-FR.png" />
+    <Content Include="Icons\0326.it-IT.png" />
+    <Content Include="Icons\0327.de-DE.png" />
+    <Content Include="Icons\0327.en-US.png" />
+    <Content Include="Icons\0327.fr-FR.png" />
+    <Content Include="Icons\0327.it-IT.png" />
+    <Content Include="Icons\0328.de-DE.png" />
+    <Content Include="Icons\0328.en-US.png" />
+    <Content Include="Icons\0328.fr-FR.png" />
+    <Content Include="Icons\0328.it-IT.png" />
+    <Content Include="Icons\0329.de-DE.png" />
+    <Content Include="Icons\0329.en-US.png" />
+    <Content Include="Icons\0329.fr-FR.png" />
+    <Content Include="Icons\0329.it-IT.png" />
+    <Content Include="Icons\0330.de-DE.png" />
+    <Content Include="Icons\0330.en-US.png" />
+    <Content Include="Icons\0330.fr-FR.png" />
+    <Content Include="Icons\0330.it-IT.png" />
+    <Content Include="Icons\0331.de-DE.png" />
+    <Content Include="Icons\0331.en-US.png" />
+    <Content Include="Icons\0331.fr-FR.png" />
+    <Content Include="Icons\0331.it-IT.png" />
+    <Content Include="Icons\0401.de-DE.png" />
+    <Content Include="Icons\0401.en-US.png" />
+    <Content Include="Icons\0401.fr-FR.png" />
+    <Content Include="Icons\0401.it-IT.png" />
+    <Content Include="Icons\0402.de-DE.png" />
+    <Content Include="Icons\0402.en-US.png" />
+    <Content Include="Icons\0402.fr-FR.png" />
+    <Content Include="Icons\0402.it-IT.png" />
+    <Content Include="Icons\0403.de-DE.png" />
+    <Content Include="Icons\0403.en-US.png" />
+    <Content Include="Icons\0403.fr-FR.png" />
+    <Content Include="Icons\0403.it-IT.png" />
+    <Content Include="Icons\0404.de-DE.png" />
+    <Content Include="Icons\0404.en-US.png" />
+    <Content Include="Icons\0404.fr-FR.png" />
+    <Content Include="Icons\0404.it-IT.png" />
+    <Content Include="Icons\0405.de-DE.png" />
+    <Content Include="Icons\0405.en-US.png" />
+    <Content Include="Icons\0405.fr-FR.png" />
+    <Content Include="Icons\0405.it-IT.png" />
+    <Content Include="Icons\0406.de-DE.png" />
+    <Content Include="Icons\0406.en-US.png" />
+    <Content Include="Icons\0406.fr-FR.png" />
+    <Content Include="Icons\0406.it-IT.png" />
+    <Content Include="Icons\0407.de-DE.png" />
+    <Content Include="Icons\0407.en-US.png" />
+    <Content Include="Icons\0407.fr-FR.png" />
+    <Content Include="Icons\0407.it-IT.png" />
+    <Content Include="Icons\0408.de-DE.png" />
+    <Content Include="Icons\0408.en-US.png" />
+    <Content Include="Icons\0408.fr-FR.png" />
+    <Content Include="Icons\0408.it-IT.png" />
+    <Content Include="Icons\0409.de-DE.png" />
+    <Content Include="Icons\0409.en-US.png" />
+    <Content Include="Icons\0409.fr-FR.png" />
+    <Content Include="Icons\0409.it-IT.png" />
+    <Content Include="Icons\0410.de-DE.png" />
+    <Content Include="Icons\0410.en-US.png" />
+    <Content Include="Icons\0410.fr-FR.png" />
+    <Content Include="Icons\0410.it-IT.png" />
+    <Content Include="Icons\0411.de-DE.png" />
+    <Content Include="Icons\0411.en-US.png" />
+    <Content Include="Icons\0411.fr-FR.png" />
+    <Content Include="Icons\0411.it-IT.png" />
+    <Content Include="Icons\0412.de-DE.png" />
+    <Content Include="Icons\0412.en-US.png" />
+    <Content Include="Icons\0412.fr-FR.png" />
+    <Content Include="Icons\0412.it-IT.png" />
+    <Content Include="Icons\0413.de-DE.png" />
+    <Content Include="Icons\0413.en-US.png" />
+    <Content Include="Icons\0413.fr-FR.png" />
+    <Content Include="Icons\0413.it-IT.png" />
+    <Content Include="Icons\0414.de-DE.png" />
+    <Content Include="Icons\0414.en-US.png" />
+    <Content Include="Icons\0414.fr-FR.png" />
+    <Content Include="Icons\0414.it-IT.png" />
+    <Content Include="Icons\0415.de-DE.png" />
+    <Content Include="Icons\0415.en-US.png" />
+    <Content Include="Icons\0415.fr-FR.png" />
+    <Content Include="Icons\0415.it-IT.png" />
+    <Content Include="Icons\0416.de-DE.png" />
+    <Content Include="Icons\0416.en-US.png" />
+    <Content Include="Icons\0416.fr-FR.png" />
+    <Content Include="Icons\0416.it-IT.png" />
+    <Content Include="Icons\0417.de-DE.png" />
+    <Content Include="Icons\0417.en-US.png" />
+    <Content Include="Icons\0417.fr-FR.png" />
+    <Content Include="Icons\0417.it-IT.png" />
+    <Content Include="Icons\0418.de-DE.png" />
+    <Content Include="Icons\0418.en-US.png" />
+    <Content Include="Icons\0418.fr-FR.png" />
+    <Content Include="Icons\0418.it-IT.png" />
+    <Content Include="Icons\0419.de-DE.png" />
+    <Content Include="Icons\0419.en-US.png" />
+    <Content Include="Icons\0419.fr-FR.png" />
+    <Content Include="Icons\0419.it-IT.png" />
+    <Content Include="Icons\0420.de-DE.png" />
+    <Content Include="Icons\0420.en-US.png" />
+    <Content Include="Icons\0420.fr-FR.png" />
+    <Content Include="Icons\0420.it-IT.png" />
+    <Content Include="Icons\0421.de-DE.png" />
+    <Content Include="Icons\0421.en-US.png" />
+    <Content Include="Icons\0421.fr-FR.png" />
+    <Content Include="Icons\0421.it-IT.png" />
+    <Content Include="Icons\0422.de-DE.png" />
+    <Content Include="Icons\0422.en-US.png" />
+    <Content Include="Icons\0422.fr-FR.png" />
+    <Content Include="Icons\0422.it-IT.png" />
+    <Content Include="Icons\0423.de-DE.png" />
+    <Content Include="Icons\0423.en-US.png" />
+    <Content Include="Icons\0423.fr-FR.png" />
+    <Content Include="Icons\0423.it-IT.png" />
+    <Content Include="Icons\0424.de-DE.png" />
+    <Content Include="Icons\0424.en-US.png" />
+    <Content Include="Icons\0424.fr-FR.png" />
+    <Content Include="Icons\0424.it-IT.png" />
+    <Content Include="Icons\0425.de-DE.png" />
+    <Content Include="Icons\0425.en-US.png" />
+    <Content Include="Icons\0425.fr-FR.png" />
+    <Content Include="Icons\0425.it-IT.png" />
+    <Content Include="Icons\0426.de-DE.png" />
+    <Content Include="Icons\0426.en-US.png" />
+    <Content Include="Icons\0426.fr-FR.png" />
+    <Content Include="Icons\0426.it-IT.png" />
+    <Content Include="Icons\0427.de-DE.png" />
+    <Content Include="Icons\0427.en-US.png" />
+    <Content Include="Icons\0427.fr-FR.png" />
+    <Content Include="Icons\0427.it-IT.png" />
+    <Content Include="Icons\0428.de-DE.png" />
+    <Content Include="Icons\0428.en-US.png" />
+    <Content Include="Icons\0428.fr-FR.png" />
+    <Content Include="Icons\0428.it-IT.png" />
+    <Content Include="Icons\0429.de-DE.png" />
+    <Content Include="Icons\0429.en-US.png" />
+    <Content Include="Icons\0429.fr-FR.png" />
+    <Content Include="Icons\0429.it-IT.png" />
+    <Content Include="Icons\0430.de-DE.png" />
+    <Content Include="Icons\0430.en-US.png" />
+    <Content Include="Icons\0430.fr-FR.png" />
+    <Content Include="Icons\0430.it-IT.png" />
+    <Content Include="Icons\0501.de-DE.png" />
+    <Content Include="Icons\0501.en-US.png" />
+    <Content Include="Icons\0501.fr-FR.png" />
+    <Content Include="Icons\0501.it-IT.png" />
+    <Content Include="Icons\0502.de-DE.png" />
+    <Content Include="Icons\0502.en-US.png" />
+    <Content Include="Icons\0502.fr-FR.png" />
+    <Content Include="Icons\0502.it-IT.png" />
+    <Content Include="Icons\0503.de-DE.png" />
+    <Content Include="Icons\0503.en-US.png" />
+    <Content Include="Icons\0503.fr-FR.png" />
+    <Content Include="Icons\0503.it-IT.png" />
+    <Content Include="Icons\0504.de-DE.png" />
+    <Content Include="Icons\0504.en-US.png" />
+    <Content Include="Icons\0504.fr-FR.png" />
+    <Content Include="Icons\0504.it-IT.png" />
+    <Content Include="Icons\0505.de-DE.png" />
+    <Content Include="Icons\0505.en-US.png" />
+    <Content Include="Icons\0505.fr-FR.png" />
+    <Content Include="Icons\0505.it-IT.png" />
+    <Content Include="Icons\0506.de-DE.png" />
+    <Content Include="Icons\0506.en-US.png" />
+    <Content Include="Icons\0506.fr-FR.png" />
+    <Content Include="Icons\0506.it-IT.png" />
+    <Content Include="Icons\0507.de-DE.png" />
+    <Content Include="Icons\0507.en-US.png" />
+    <Content Include="Icons\0507.fr-FR.png" />
+    <Content Include="Icons\0507.it-IT.png" />
+    <Content Include="Icons\0508.de-DE.png" />
+    <Content Include="Icons\0508.en-US.png" />
+    <Content Include="Icons\0508.fr-FR.png" />
+    <Content Include="Icons\0508.it-IT.png" />
+    <Content Include="Icons\0509.de-DE.png" />
+    <Content Include="Icons\0509.en-US.png" />
+    <Content Include="Icons\0509.fr-FR.png" />
+    <Content Include="Icons\0509.it-IT.png" />
+    <Content Include="Icons\0510.de-DE.png" />
+    <Content Include="Icons\0510.en-US.png" />
+    <Content Include="Icons\0510.fr-FR.png" />
+    <Content Include="Icons\0510.it-IT.png" />
+    <Content Include="Icons\0511.de-DE.png" />
+    <Content Include="Icons\0511.en-US.png" />
+    <Content Include="Icons\0511.fr-FR.png" />
+    <Content Include="Icons\0511.it-IT.png" />
+    <Content Include="Icons\0512.de-DE.png" />
+    <Content Include="Icons\0512.en-US.png" />
+    <Content Include="Icons\0512.fr-FR.png" />
+    <Content Include="Icons\0512.it-IT.png" />
+    <Content Include="Icons\0513.de-DE.png" />
+    <Content Include="Icons\0513.en-US.png" />
+    <Content Include="Icons\0513.fr-FR.png" />
+    <Content Include="Icons\0513.it-IT.png" />
+    <Content Include="Icons\0514.de-DE.png" />
+    <Content Include="Icons\0514.en-US.png" />
+    <Content Include="Icons\0514.fr-FR.png" />
+    <Content Include="Icons\0514.it-IT.png" />
+    <Content Include="Icons\0515.de-DE.png" />
+    <Content Include="Icons\0515.en-US.png" />
+    <Content Include="Icons\0515.fr-FR.png" />
+    <Content Include="Icons\0515.it-IT.png" />
+    <Content Include="Icons\0516.de-DE.png" />
+    <Content Include="Icons\0516.en-US.png" />
+    <Content Include="Icons\0516.fr-FR.png" />
+    <Content Include="Icons\0516.it-IT.png" />
+    <Content Include="Icons\0517.de-DE.png" />
+    <Content Include="Icons\0517.en-US.png" />
+    <Content Include="Icons\0517.fr-FR.png" />
+    <Content Include="Icons\0517.it-IT.png" />
+    <Content Include="Icons\0518.de-DE.png" />
+    <Content Include="Icons\0518.en-US.png" />
+    <Content Include="Icons\0518.fr-FR.png" />
+    <Content Include="Icons\0518.it-IT.png" />
+    <Content Include="Icons\0519.de-DE.png" />
+    <Content Include="Icons\0519.en-US.png" />
+    <Content Include="Icons\0519.fr-FR.png" />
+    <Content Include="Icons\0519.it-IT.png" />
+    <Content Include="Icons\0520.de-DE.png" />
+    <Content Include="Icons\0520.en-US.png" />
+    <Content Include="Icons\0520.fr-FR.png" />
+    <Content Include="Icons\0520.it-IT.png" />
+    <Content Include="Icons\0521.de-DE.png" />
+    <Content Include="Icons\0521.en-US.png" />
+    <Content Include="Icons\0521.fr-FR.png" />
+    <Content Include="Icons\0521.it-IT.png" />
+    <Content Include="Icons\0522.de-DE.png" />
+    <Content Include="Icons\0522.en-US.png" />
+    <Content Include="Icons\0522.fr-FR.png" />
+    <Content Include="Icons\0522.it-IT.png" />
+    <Content Include="Icons\0523.de-DE.png" />
+    <Content Include="Icons\0523.en-US.png" />
+    <Content Include="Icons\0523.fr-FR.png" />
+    <Content Include="Icons\0523.it-IT.png" />
+    <Content Include="Icons\0524.de-DE.png" />
+    <Content Include="Icons\0524.en-US.png" />
+    <Content Include="Icons\0524.fr-FR.png" />
+    <Content Include="Icons\0524.it-IT.png" />
+    <Content Include="Icons\0525.de-DE.png" />
+    <Content Include="Icons\0525.en-US.png" />
+    <Content Include="Icons\0525.fr-FR.png" />
+    <Content Include="Icons\0525.it-IT.png" />
+    <Content Include="Icons\0526.de-DE.png" />
+    <Content Include="Icons\0526.en-US.png" />
+    <Content Include="Icons\0526.fr-FR.png" />
+    <Content Include="Icons\0526.it-IT.png" />
+    <Content Include="Icons\0527.de-DE.png" />
+    <Content Include="Icons\0527.en-US.png" />
+    <Content Include="Icons\0527.fr-FR.png" />
+    <Content Include="Icons\0527.it-IT.png" />
+    <Content Include="Icons\0528.de-DE.png" />
+    <Content Include="Icons\0528.en-US.png" />
+    <Content Include="Icons\0528.fr-FR.png" />
+    <Content Include="Icons\0528.it-IT.png" />
+    <Content Include="Icons\0529.de-DE.png" />
+    <Content Include="Icons\0529.en-US.png" />
+    <Content Include="Icons\0529.fr-FR.png" />
+    <Content Include="Icons\0529.it-IT.png" />
+    <Content Include="Icons\0530.de-DE.png" />
+    <Content Include="Icons\0530.en-US.png" />
+    <Content Include="Icons\0530.fr-FR.png" />
+    <Content Include="Icons\0530.it-IT.png" />
+    <Content Include="Icons\0531.de-DE.png" />
+    <Content Include="Icons\0531.en-US.png" />
+    <Content Include="Icons\0531.fr-FR.png" />
+    <Content Include="Icons\0531.it-IT.png" />
+    <Content Include="Icons\0601.de-DE.png" />
+    <Content Include="Icons\0601.en-US.png" />
+    <Content Include="Icons\0601.fr-FR.png" />
+    <Content Include="Icons\0601.it-IT.png" />
+    <Content Include="Icons\0602.de-DE.png" />
+    <Content Include="Icons\0602.en-US.png" />
+    <Content Include="Icons\0602.fr-FR.png" />
+    <Content Include="Icons\0602.it-IT.png" />
+    <Content Include="Icons\0603.de-DE.png" />
+    <Content Include="Icons\0603.en-US.png" />
+    <Content Include="Icons\0603.fr-FR.png" />
+    <Content Include="Icons\0603.it-IT.png" />
+    <Content Include="Icons\0604.de-DE.png" />
+    <Content Include="Icons\0604.en-US.png" />
+    <Content Include="Icons\0604.fr-FR.png" />
+    <Content Include="Icons\0604.it-IT.png" />
+    <Content Include="Icons\0605.de-DE.png" />
+    <Content Include="Icons\0605.en-US.png" />
+    <Content Include="Icons\0605.fr-FR.png" />
+    <Content Include="Icons\0605.it-IT.png" />
+    <Content Include="Icons\0606.de-DE.png" />
+    <Content Include="Icons\0606.en-US.png" />
+    <Content Include="Icons\0606.fr-FR.png" />
+    <Content Include="Icons\0606.it-IT.png" />
+    <Content Include="Icons\0607.de-DE.png" />
+    <Content Include="Icons\0607.en-US.png" />
+    <Content Include="Icons\0607.fr-FR.png" />
+    <Content Include="Icons\0607.it-IT.png" />
+    <Content Include="Icons\0608.de-DE.png" />
+    <Content Include="Icons\0608.en-US.png" />
+    <Content Include="Icons\0608.fr-FR.png" />
+    <Content Include="Icons\0608.it-IT.png" />
+    <Content Include="Icons\0609.de-DE.png" />
+    <Content Include="Icons\0609.en-US.png" />
+    <Content Include="Icons\0609.fr-FR.png" />
+    <Content Include="Icons\0609.it-IT.png" />
+    <Content Include="Icons\0610.de-DE.png" />
+    <Content Include="Icons\0610.en-US.png" />
+    <Content Include="Icons\0610.fr-FR.png" />
+    <Content Include="Icons\0610.it-IT.png" />
+    <Content Include="Icons\0611.de-DE.png" />
+    <Content Include="Icons\0611.en-US.png" />
+    <Content Include="Icons\0611.fr-FR.png" />
+    <Content Include="Icons\0611.it-IT.png" />
+    <Content Include="Icons\0612.de-DE.png" />
+    <Content Include="Icons\0612.en-US.png" />
+    <Content Include="Icons\0612.fr-FR.png" />
+    <Content Include="Icons\0612.it-IT.png" />
+    <Content Include="Icons\0613.de-DE.png" />
+    <Content Include="Icons\0613.en-US.png" />
+    <Content Include="Icons\0613.fr-FR.png" />
+    <Content Include="Icons\0613.it-IT.png" />
+    <Content Include="Icons\0614.de-DE.png" />
+    <Content Include="Icons\0614.en-US.png" />
+    <Content Include="Icons\0614.fr-FR.png" />
+    <Content Include="Icons\0614.it-IT.png" />
+    <Content Include="Icons\0615.de-DE.png" />
+    <Content Include="Icons\0615.en-US.png" />
+    <Content Include="Icons\0615.fr-FR.png" />
+    <Content Include="Icons\0615.it-IT.png" />
+    <Content Include="Icons\0616.de-DE.png" />
+    <Content Include="Icons\0616.en-US.png" />
+    <Content Include="Icons\0616.fr-FR.png" />
+    <Content Include="Icons\0616.it-IT.png" />
+    <Content Include="Icons\0617.de-DE.png" />
+    <Content Include="Icons\0617.en-US.png" />
+    <Content Include="Icons\0617.fr-FR.png" />
+    <Content Include="Icons\0617.it-IT.png" />
+    <Content Include="Icons\0618.de-DE.png" />
+    <Content Include="Icons\0618.en-US.png" />
+    <Content Include="Icons\0618.fr-FR.png" />
+    <Content Include="Icons\0618.it-IT.png" />
+    <Content Include="Icons\0619.de-DE.png" />
+    <Content Include="Icons\0619.en-US.png" />
+    <Content Include="Icons\0619.fr-FR.png" />
+    <Content Include="Icons\0619.it-IT.png" />
+    <Content Include="Icons\0620.de-DE.png" />
+    <Content Include="Icons\0620.en-US.png" />
+    <Content Include="Icons\0620.fr-FR.png" />
+    <Content Include="Icons\0620.it-IT.png" />
+    <Content Include="Icons\0621.de-DE.png" />
+    <Content Include="Icons\0621.en-US.png" />
+    <Content Include="Icons\0621.fr-FR.png" />
+    <Content Include="Icons\0621.it-IT.png" />
+    <Content Include="Icons\0622.de-DE.png" />
+    <Content Include="Icons\0622.en-US.png" />
+    <Content Include="Icons\0622.fr-FR.png" />
+    <Content Include="Icons\0622.it-IT.png" />
+    <Content Include="Icons\0623.de-DE.png" />
+    <Content Include="Icons\0623.en-US.png" />
+    <Content Include="Icons\0623.fr-FR.png" />
+    <Content Include="Icons\0623.it-IT.png" />
+    <Content Include="Icons\0624.de-DE.png" />
+    <Content Include="Icons\0624.en-US.png" />
+    <Content Include="Icons\0624.fr-FR.png" />
+    <Content Include="Icons\0624.it-IT.png" />
+    <Content Include="Icons\0625.de-DE.png" />
+    <Content Include="Icons\0625.en-US.png" />
+    <Content Include="Icons\0625.fr-FR.png" />
+    <Content Include="Icons\0625.it-IT.png" />
+    <Content Include="Icons\0626.de-DE.png" />
+    <Content Include="Icons\0626.en-US.png" />
+    <Content Include="Icons\0626.fr-FR.png" />
+    <Content Include="Icons\0626.it-IT.png" />
+    <Content Include="Icons\0627.de-DE.png" />
+    <Content Include="Icons\0627.en-US.png" />
+    <Content Include="Icons\0627.fr-FR.png" />
+    <Content Include="Icons\0627.it-IT.png" />
+    <Content Include="Icons\0628.de-DE.png" />
+    <Content Include="Icons\0628.en-US.png" />
+    <Content Include="Icons\0628.fr-FR.png" />
+    <Content Include="Icons\0628.it-IT.png" />
+    <Content Include="Icons\0629.de-DE.png" />
+    <Content Include="Icons\0629.en-US.png" />
+    <Content Include="Icons\0629.fr-FR.png" />
+    <Content Include="Icons\0629.it-IT.png" />
+    <Content Include="Icons\0630.de-DE.png" />
+    <Content Include="Icons\0630.en-US.png" />
+    <Content Include="Icons\0630.fr-FR.png" />
+    <Content Include="Icons\0630.it-IT.png" />
+    <Content Include="Icons\0701.de-DE.png" />
+    <Content Include="Icons\0701.en-US.png" />
+    <Content Include="Icons\0701.fr-FR.png" />
+    <Content Include="Icons\0701.it-IT.png" />
+    <Content Include="Icons\0702.de-DE.png" />
+    <Content Include="Icons\0702.en-US.png" />
+    <Content Include="Icons\0702.fr-FR.png" />
+    <Content Include="Icons\0702.it-IT.png" />
+    <Content Include="Icons\0703.de-DE.png" />
+    <Content Include="Icons\0703.en-US.png" />
+    <Content Include="Icons\0703.fr-FR.png" />
+    <Content Include="Icons\0703.it-IT.png" />
+    <Content Include="Icons\0704.de-DE.png" />
+    <Content Include="Icons\0704.en-US.png" />
+    <Content Include="Icons\0704.fr-FR.png" />
+    <Content Include="Icons\0704.it-IT.png" />
+    <Content Include="Icons\0705.de-DE.png" />
+    <Content Include="Icons\0705.en-US.png" />
+    <Content Include="Icons\0705.fr-FR.png" />
+    <Content Include="Icons\0705.it-IT.png" />
+    <Content Include="Icons\0706.de-DE.png" />
+    <Content Include="Icons\0706.en-US.png" />
+    <Content Include="Icons\0706.fr-FR.png" />
+    <Content Include="Icons\0706.it-IT.png" />
+    <Content Include="Icons\0707.de-DE.png" />
+    <Content Include="Icons\0707.en-US.png" />
+    <Content Include="Icons\0707.fr-FR.png" />
+    <Content Include="Icons\0707.it-IT.png" />
+    <Content Include="Icons\0708.de-DE.png" />
+    <Content Include="Icons\0708.en-US.png" />
+    <Content Include="Icons\0708.fr-FR.png" />
+    <Content Include="Icons\0708.it-IT.png" />
+    <Content Include="Icons\0709.de-DE.png" />
+    <Content Include="Icons\0709.en-US.png" />
+    <Content Include="Icons\0709.fr-FR.png" />
+    <Content Include="Icons\0709.it-IT.png" />
+    <Content Include="Icons\0710.de-DE.png" />
+    <Content Include="Icons\0710.en-US.png" />
+    <Content Include="Icons\0710.fr-FR.png" />
+    <Content Include="Icons\0710.it-IT.png" />
+    <Content Include="Icons\0711.de-DE.png" />
+    <Content Include="Icons\0711.en-US.png" />
+    <Content Include="Icons\0711.fr-FR.png" />
+    <Content Include="Icons\0711.it-IT.png" />
+    <Content Include="Icons\0712.de-DE.png" />
+    <Content Include="Icons\0712.en-US.png" />
+    <Content Include="Icons\0712.fr-FR.png" />
+    <Content Include="Icons\0712.it-IT.png" />
+    <Content Include="Icons\0713.de-DE.png" />
+    <Content Include="Icons\0713.en-US.png" />
+    <Content Include="Icons\0713.fr-FR.png" />
+    <Content Include="Icons\0713.it-IT.png" />
+    <Content Include="Icons\0714.de-DE.png" />
+    <Content Include="Icons\0714.en-US.png" />
+    <Content Include="Icons\0714.fr-FR.png" />
+    <Content Include="Icons\0714.it-IT.png" />
+    <Content Include="Icons\0715.de-DE.png" />
+    <Content Include="Icons\0715.en-US.png" />
+    <Content Include="Icons\0715.fr-FR.png" />
+    <Content Include="Icons\0715.it-IT.png" />
+    <Content Include="Icons\0716.de-DE.png" />
+    <Content Include="Icons\0716.en-US.png" />
+    <Content Include="Icons\0716.fr-FR.png" />
+    <Content Include="Icons\0716.it-IT.png" />
+    <Content Include="Icons\0717.de-DE.png" />
+    <Content Include="Icons\0717.en-US.png" />
+    <Content Include="Icons\0717.fr-FR.png" />
+    <Content Include="Icons\0717.it-IT.png" />
+    <Content Include="Icons\0718.de-DE.png" />
+    <Content Include="Icons\0718.en-US.png" />
+    <Content Include="Icons\0718.fr-FR.png" />
+    <Content Include="Icons\0718.it-IT.png" />
+    <Content Include="Icons\0719.de-DE.png" />
+    <Content Include="Icons\0719.en-US.png" />
+    <Content Include="Icons\0719.fr-FR.png" />
+    <Content Include="Icons\0719.it-IT.png" />
+    <Content Include="Icons\0720.de-DE.png" />
+    <Content Include="Icons\0720.en-US.png" />
+    <Content Include="Icons\0720.fr-FR.png" />
+    <Content Include="Icons\0720.it-IT.png" />
+    <Content Include="Icons\0721.de-DE.png" />
+    <Content Include="Icons\0721.en-US.png" />
+    <Content Include="Icons\0721.fr-FR.png" />
+    <Content Include="Icons\0721.it-IT.png" />
+    <Content Include="Icons\0722.de-DE.png" />
+    <Content Include="Icons\0722.en-US.png" />
+    <Content Include="Icons\0722.fr-FR.png" />
+    <Content Include="Icons\0722.it-IT.png" />
+    <Content Include="Icons\0723.de-DE.png" />
+    <Content Include="Icons\0723.en-US.png" />
+    <Content Include="Icons\0723.fr-FR.png" />
+    <Content Include="Icons\0723.it-IT.png" />
+    <Content Include="Icons\0724.de-DE.png" />
+    <Content Include="Icons\0724.en-US.png" />
+    <Content Include="Icons\0724.fr-FR.png" />
+    <Content Include="Icons\0724.it-IT.png" />
+    <Content Include="Icons\0725.de-DE.png" />
+    <Content Include="Icons\0725.en-US.png" />
+    <Content Include="Icons\0725.fr-FR.png" />
+    <Content Include="Icons\0725.it-IT.png" />
+    <Content Include="Icons\0726.de-DE.png" />
+    <Content Include="Icons\0726.en-US.png" />
+    <Content Include="Icons\0726.fr-FR.png" />
+    <Content Include="Icons\0726.it-IT.png" />
+    <Content Include="Icons\0727.de-DE.png" />
+    <Content Include="Icons\0727.en-US.png" />
+    <Content Include="Icons\0727.fr-FR.png" />
+    <Content Include="Icons\0727.it-IT.png" />
+    <Content Include="Icons\0728.de-DE.png" />
+    <Content Include="Icons\0728.en-US.png" />
+    <Content Include="Icons\0728.fr-FR.png" />
+    <Content Include="Icons\0728.it-IT.png" />
+    <Content Include="Icons\0729.de-DE.png" />
+    <Content Include="Icons\0729.en-US.png" />
+    <Content Include="Icons\0729.fr-FR.png" />
+    <Content Include="Icons\0729.it-IT.png" />
+    <Content Include="Icons\0730.de-DE.png" />
+    <Content Include="Icons\0730.en-US.png" />
+    <Content Include="Icons\0730.fr-FR.png" />
+    <Content Include="Icons\0730.it-IT.png" />
+    <Content Include="Icons\0731.de-DE.png" />
+    <Content Include="Icons\0731.en-US.png" />
+    <Content Include="Icons\0731.fr-FR.png" />
+    <Content Include="Icons\0731.it-IT.png" />
+    <Content Include="Icons\0801.de-DE.png" />
+    <Content Include="Icons\0801.en-US.png" />
+    <Content Include="Icons\0801.fr-FR.png" />
+    <Content Include="Icons\0801.it-IT.png" />
+    <Content Include="Icons\0802.de-DE.png" />
+    <Content Include="Icons\0802.en-US.png" />
+    <Content Include="Icons\0802.fr-FR.png" />
+    <Content Include="Icons\0802.it-IT.png" />
+    <Content Include="Icons\0803.de-DE.png" />
+    <Content Include="Icons\0803.en-US.png" />
+    <Content Include="Icons\0803.fr-FR.png" />
+    <Content Include="Icons\0803.it-IT.png" />
+    <Content Include="Icons\0804.de-DE.png" />
+    <Content Include="Icons\0804.en-US.png" />
+    <Content Include="Icons\0804.fr-FR.png" />
+    <Content Include="Icons\0804.it-IT.png" />
+    <Content Include="Icons\0805.de-DE.png" />
+    <Content Include="Icons\0805.en-US.png" />
+    <Content Include="Icons\0805.fr-FR.png" />
+    <Content Include="Icons\0805.it-IT.png" />
+    <Content Include="Icons\0806.de-DE.png" />
+    <Content Include="Icons\0806.en-US.png" />
+    <Content Include="Icons\0806.fr-FR.png" />
+    <Content Include="Icons\0806.it-IT.png" />
+    <Content Include="Icons\0807.de-DE.png" />
+    <Content Include="Icons\0807.en-US.png" />
+    <Content Include="Icons\0807.fr-FR.png" />
+    <Content Include="Icons\0807.it-IT.png" />
+    <Content Include="Icons\0808.de-DE.png" />
+    <Content Include="Icons\0808.en-US.png" />
+    <Content Include="Icons\0808.fr-FR.png" />
+    <Content Include="Icons\0808.it-IT.png" />
+    <Content Include="Icons\0809.de-DE.png" />
+    <Content Include="Icons\0809.en-US.png" />
+    <Content Include="Icons\0809.fr-FR.png" />
+    <Content Include="Icons\0809.it-IT.png" />
+    <Content Include="Icons\0810.de-DE.png" />
+    <Content Include="Icons\0810.en-US.png" />
+    <Content Include="Icons\0810.fr-FR.png" />
+    <Content Include="Icons\0810.it-IT.png" />
+    <Content Include="Icons\0811.de-DE.png" />
+    <Content Include="Icons\0811.en-US.png" />
+    <Content Include="Icons\0811.fr-FR.png" />
+    <Content Include="Icons\0811.it-IT.png" />
+    <Content Include="Icons\0812.de-DE.png" />
+    <Content Include="Icons\0812.en-US.png" />
+    <Content Include="Icons\0812.fr-FR.png" />
+    <Content Include="Icons\0812.it-IT.png" />
+    <Content Include="Icons\0813.de-DE.png" />
+    <Content Include="Icons\0813.en-US.png" />
+    <Content Include="Icons\0813.fr-FR.png" />
+    <Content Include="Icons\0813.it-IT.png" />
+    <Content Include="Icons\0814.de-DE.png" />
+    <Content Include="Icons\0814.en-US.png" />
+    <Content Include="Icons\0814.fr-FR.png" />
+    <Content Include="Icons\0814.it-IT.png" />
+    <Content Include="Icons\0815.de-DE.png" />
+    <Content Include="Icons\0815.en-US.png" />
+    <Content Include="Icons\0815.fr-FR.png" />
+    <Content Include="Icons\0815.it-IT.png" />
+    <Content Include="Icons\0816.de-DE.png" />
+    <Content Include="Icons\0816.en-US.png" />
+    <Content Include="Icons\0816.fr-FR.png" />
+    <Content Include="Icons\0816.it-IT.png" />
+    <Content Include="Icons\0817.de-DE.png" />
+    <Content Include="Icons\0817.en-US.png" />
+    <Content Include="Icons\0817.fr-FR.png" />
+    <Content Include="Icons\0817.it-IT.png" />
+    <Content Include="Icons\0818.de-DE.png" />
+    <Content Include="Icons\0818.en-US.png" />
+    <Content Include="Icons\0818.fr-FR.png" />
+    <Content Include="Icons\0818.it-IT.png" />
+    <Content Include="Icons\0819.de-DE.png" />
+    <Content Include="Icons\0819.en-US.png" />
+    <Content Include="Icons\0819.fr-FR.png" />
+    <Content Include="Icons\0819.it-IT.png" />
+    <Content Include="Icons\0820.de-DE.png" />
+    <Content Include="Icons\0820.en-US.png" />
+    <Content Include="Icons\0820.fr-FR.png" />
+    <Content Include="Icons\0820.it-IT.png" />
+    <Content Include="Icons\0821.de-DE.png" />
+    <Content Include="Icons\0821.en-US.png" />
+    <Content Include="Icons\0821.fr-FR.png" />
+    <Content Include="Icons\0821.it-IT.png" />
+    <Content Include="Icons\0822.de-DE.png" />
+    <Content Include="Icons\0822.en-US.png" />
+    <Content Include="Icons\0822.fr-FR.png" />
+    <Content Include="Icons\0822.it-IT.png" />
+    <Content Include="Icons\0823.de-DE.png" />
+    <Content Include="Icons\0823.en-US.png" />
+    <Content Include="Icons\0823.fr-FR.png" />
+    <Content Include="Icons\0823.it-IT.png" />
+    <Content Include="Icons\0824.de-DE.png" />
+    <Content Include="Icons\0824.en-US.png" />
+    <Content Include="Icons\0824.fr-FR.png" />
+    <Content Include="Icons\0824.it-IT.png" />
+    <Content Include="Icons\0825.de-DE.png" />
+    <Content Include="Icons\0825.en-US.png" />
+    <Content Include="Icons\0825.fr-FR.png" />
+    <Content Include="Icons\0825.it-IT.png" />
+    <Content Include="Icons\0826.de-DE.png" />
+    <Content Include="Icons\0826.en-US.png" />
+    <Content Include="Icons\0826.fr-FR.png" />
+    <Content Include="Icons\0826.it-IT.png" />
+    <Content Include="Icons\0827.de-DE.png" />
+    <Content Include="Icons\0827.en-US.png" />
+    <Content Include="Icons\0827.fr-FR.png" />
+    <Content Include="Icons\0827.it-IT.png" />
+    <Content Include="Icons\0828.de-DE.png" />
+    <Content Include="Icons\0828.en-US.png" />
+    <Content Include="Icons\0828.fr-FR.png" />
+    <Content Include="Icons\0828.it-IT.png" />
+    <Content Include="Icons\0829.de-DE.png" />
+    <Content Include="Icons\0829.en-US.png" />
+    <Content Include="Icons\0829.fr-FR.png" />
+    <Content Include="Icons\0829.it-IT.png" />
+    <Content Include="Icons\0830.de-DE.png" />
+    <Content Include="Icons\0830.en-US.png" />
+    <Content Include="Icons\0830.fr-FR.png" />
+    <Content Include="Icons\0830.it-IT.png" />
+    <Content Include="Icons\0831.de-DE.png" />
+    <Content Include="Icons\0831.en-US.png" />
+    <Content Include="Icons\0831.fr-FR.png" />
+    <Content Include="Icons\0831.it-IT.png" />
+    <Content Include="Icons\0901.de-DE.png" />
+    <Content Include="Icons\0901.en-US.png" />
+    <Content Include="Icons\0901.fr-FR.png" />
+    <Content Include="Icons\0901.it-IT.png" />
+    <Content Include="Icons\0902.de-DE.png" />
+    <Content Include="Icons\0902.en-US.png" />
+    <Content Include="Icons\0902.fr-FR.png" />
+    <Content Include="Icons\0902.it-IT.png" />
+    <Content Include="Icons\0903.de-DE.png" />
+    <Content Include="Icons\0903.en-US.png" />
+    <Content Include="Icons\0903.fr-FR.png" />
+    <Content Include="Icons\0903.it-IT.png" />
+    <Content Include="Icons\0904.de-DE.png" />
+    <Content Include="Icons\0904.en-US.png" />
+    <Content Include="Icons\0904.fr-FR.png" />
+    <Content Include="Icons\0904.it-IT.png" />
+    <Content Include="Icons\0905.de-DE.png" />
+    <Content Include="Icons\0905.en-US.png" />
+    <Content Include="Icons\0905.fr-FR.png" />
+    <Content Include="Icons\0905.it-IT.png" />
+    <Content Include="Icons\0906.de-DE.png" />
+    <Content Include="Icons\0906.en-US.png" />
+    <Content Include="Icons\0906.fr-FR.png" />
+    <Content Include="Icons\0906.it-IT.png" />
+    <Content Include="Icons\0907.de-DE.png" />
+    <Content Include="Icons\0907.en-US.png" />
+    <Content Include="Icons\0907.fr-FR.png" />
+    <Content Include="Icons\0907.it-IT.png" />
+    <Content Include="Icons\0908.de-DE.png" />
+    <Content Include="Icons\0908.en-US.png" />
+    <Content Include="Icons\0908.fr-FR.png" />
+    <Content Include="Icons\0908.it-IT.png" />
+    <Content Include="Icons\0909.de-DE.png" />
+    <Content Include="Icons\0909.en-US.png" />
+    <Content Include="Icons\0909.fr-FR.png" />
+    <Content Include="Icons\0909.it-IT.png" />
+    <Content Include="Icons\0910.de-DE.png" />
+    <Content Include="Icons\0910.en-US.png" />
+    <Content Include="Icons\0910.fr-FR.png" />
+    <Content Include="Icons\0910.it-IT.png" />
+    <Content Include="Icons\0911.de-DE.png" />
+    <Content Include="Icons\0911.en-US.png" />
+    <Content Include="Icons\0911.fr-FR.png" />
+    <Content Include="Icons\0911.it-IT.png" />
+    <Content Include="Icons\0912.de-DE.png" />
+    <Content Include="Icons\0912.en-US.png" />
+    <Content Include="Icons\0912.fr-FR.png" />
+    <Content Include="Icons\0912.it-IT.png" />
+    <Content Include="Icons\0913.de-DE.png" />
+    <Content Include="Icons\0913.en-US.png" />
+    <Content Include="Icons\0913.fr-FR.png" />
+    <Content Include="Icons\0913.it-IT.png" />
+    <Content Include="Icons\0914.de-DE.png" />
+    <Content Include="Icons\0914.en-US.png" />
+    <Content Include="Icons\0914.fr-FR.png" />
+    <Content Include="Icons\0914.it-IT.png" />
+    <Content Include="Icons\0915.de-DE.png" />
+    <Content Include="Icons\0915.en-US.png" />
+    <Content Include="Icons\0915.fr-FR.png" />
+    <Content Include="Icons\0915.it-IT.png" />
+    <Content Include="Icons\0916.de-DE.png" />
+    <Content Include="Icons\0916.en-US.png" />
+    <Content Include="Icons\0916.fr-FR.png" />
+    <Content Include="Icons\0916.it-IT.png" />
+    <Content Include="Icons\0917.de-DE.png" />
+    <Content Include="Icons\0917.en-US.png" />
+    <Content Include="Icons\0917.fr-FR.png" />
+    <Content Include="Icons\0917.it-IT.png" />
+    <Content Include="Icons\0918.de-DE.png" />
+    <Content Include="Icons\0918.en-US.png" />
+    <Content Include="Icons\0918.fr-FR.png" />
+    <Content Include="Icons\0918.it-IT.png" />
+    <Content Include="Icons\0919.de-DE.png" />
+    <Content Include="Icons\0919.en-US.png" />
+    <Content Include="Icons\0919.fr-FR.png" />
+    <Content Include="Icons\0919.it-IT.png" />
+    <Content Include="Icons\0920.de-DE.png" />
+    <Content Include="Icons\0920.en-US.png" />
+    <Content Include="Icons\0920.fr-FR.png" />
+    <Content Include="Icons\0920.it-IT.png" />
+    <Content Include="Icons\0921.de-DE.png" />
+    <Content Include="Icons\0921.en-US.png" />
+    <Content Include="Icons\0921.fr-FR.png" />
+    <Content Include="Icons\0921.it-IT.png" />
+    <Content Include="Icons\0922.de-DE.png" />
+    <Content Include="Icons\0922.en-US.png" />
+    <Content Include="Icons\0922.fr-FR.png" />
+    <Content Include="Icons\0922.it-IT.png" />
+    <Content Include="Icons\0923.de-DE.png" />
+    <Content Include="Icons\0923.en-US.png" />
+    <Content Include="Icons\0923.fr-FR.png" />
+    <Content Include="Icons\0923.it-IT.png" />
+    <Content Include="Icons\0924.de-DE.png" />
+    <Content Include="Icons\0924.en-US.png" />
+    <Content Include="Icons\0924.fr-FR.png" />
+    <Content Include="Icons\0924.it-IT.png" />
+    <Content Include="Icons\0925.de-DE.png" />
+    <Content Include="Icons\0925.en-US.png" />
+    <Content Include="Icons\0925.fr-FR.png" />
+    <Content Include="Icons\0925.it-IT.png" />
+    <Content Include="Icons\0926.de-DE.png" />
+    <Content Include="Icons\0926.en-US.png" />
+    <Content Include="Icons\0926.fr-FR.png" />
+    <Content Include="Icons\0926.it-IT.png" />
+    <Content Include="Icons\0927.de-DE.png" />
+    <Content Include="Icons\0927.en-US.png" />
+    <Content Include="Icons\0927.fr-FR.png" />
+    <Content Include="Icons\0927.it-IT.png" />
+    <Content Include="Icons\0928.de-DE.png" />
+    <Content Include="Icons\0928.en-US.png" />
+    <Content Include="Icons\0928.fr-FR.png" />
+    <Content Include="Icons\0928.it-IT.png" />
+    <Content Include="Icons\0929.de-DE.png" />
+    <Content Include="Icons\0929.en-US.png" />
+    <Content Include="Icons\0929.fr-FR.png" />
+    <Content Include="Icons\0929.it-IT.png" />
+    <Content Include="Icons\0930.de-DE.png" />
+    <Content Include="Icons\0930.en-US.png" />
+    <Content Include="Icons\0930.fr-FR.png" />
+    <Content Include="Icons\0930.it-IT.png" />
+    <Content Include="Icons\1001.de-DE.png" />
+    <Content Include="Icons\1001.en-US.png" />
+    <Content Include="Icons\1001.fr-FR.png" />
+    <Content Include="Icons\1001.it-IT.png" />
+    <Content Include="Icons\1002.de-DE.png" />
+    <Content Include="Icons\1002.en-US.png" />
+    <Content Include="Icons\1002.fr-FR.png" />
+    <Content Include="Icons\1002.it-IT.png" />
+    <Content Include="Icons\1003.de-DE.png" />
+    <Content Include="Icons\1003.en-US.png" />
+    <Content Include="Icons\1003.fr-FR.png" />
+    <Content Include="Icons\1003.it-IT.png" />
+    <Content Include="Icons\1004.de-DE.png" />
+    <Content Include="Icons\1004.en-US.png" />
+    <Content Include="Icons\1004.fr-FR.png" />
+    <Content Include="Icons\1004.it-IT.png" />
+    <Content Include="Icons\1005.de-DE.png" />
+    <Content Include="Icons\1005.en-US.png" />
+    <Content Include="Icons\1005.fr-FR.png" />
+    <Content Include="Icons\1005.it-IT.png" />
+    <Content Include="Icons\1006.de-DE.png" />
+    <Content Include="Icons\1006.en-US.png" />
+    <Content Include="Icons\1006.fr-FR.png" />
+    <Content Include="Icons\1006.it-IT.png" />
+    <Content Include="Icons\1007.de-DE.png" />
+    <Content Include="Icons\1007.en-US.png" />
+    <Content Include="Icons\1007.fr-FR.png" />
+    <Content Include="Icons\1007.it-IT.png" />
+    <Content Include="Icons\1008.de-DE.png" />
+    <Content Include="Icons\1008.en-US.png" />
+    <Content Include="Icons\1008.fr-FR.png" />
+    <Content Include="Icons\1008.it-IT.png" />
+    <Content Include="Icons\1009.de-DE.png" />
+    <Content Include="Icons\1009.en-US.png" />
+    <Content Include="Icons\1009.fr-FR.png" />
+    <Content Include="Icons\1009.it-IT.png" />
+    <Content Include="Icons\1010.de-DE.png" />
+    <Content Include="Icons\1010.en-US.png" />
+    <Content Include="Icons\1010.fr-FR.png" />
+    <Content Include="Icons\1010.it-IT.png" />
+    <Content Include="Icons\1011.de-DE.png" />
+    <Content Include="Icons\1011.en-US.png" />
+    <Content Include="Icons\1011.fr-FR.png" />
+    <Content Include="Icons\1011.it-IT.png" />
+    <Content Include="Icons\1012.de-DE.png" />
+    <Content Include="Icons\1012.en-US.png" />
+    <Content Include="Icons\1012.fr-FR.png" />
+    <Content Include="Icons\1012.it-IT.png" />
+    <Content Include="Icons\1013.de-DE.png" />
+    <Content Include="Icons\1013.en-US.png" />
+    <Content Include="Icons\1013.fr-FR.png" />
+    <Content Include="Icons\1013.it-IT.png" />
+    <Content Include="Icons\1014.de-DE.png" />
+    <Content Include="Icons\1014.en-US.png" />
+    <Content Include="Icons\1014.fr-FR.png" />
+    <Content Include="Icons\1014.it-IT.png" />
+    <Content Include="Icons\1015.de-DE.png" />
+    <Content Include="Icons\1015.en-US.png" />
+    <Content Include="Icons\1015.fr-FR.png" />
+    <Content Include="Icons\1015.it-IT.png" />
+    <Content Include="Icons\1016.de-DE.png" />
+    <Content Include="Icons\1016.en-US.png" />
+    <Content Include="Icons\1016.fr-FR.png" />
+    <Content Include="Icons\1016.it-IT.png" />
+    <Content Include="Icons\1017.de-DE.png" />
+    <Content Include="Icons\1017.en-US.png" />
+    <Content Include="Icons\1017.fr-FR.png" />
+    <Content Include="Icons\1017.it-IT.png" />
+    <Content Include="Icons\1018.de-DE.png" />
+    <Content Include="Icons\1018.en-US.png" />
+    <Content Include="Icons\1018.fr-FR.png" />
+    <Content Include="Icons\1018.it-IT.png" />
+    <Content Include="Icons\1019.de-DE.png" />
+    <Content Include="Icons\1019.en-US.png" />
+    <Content Include="Icons\1019.fr-FR.png" />
+    <Content Include="Icons\1019.it-IT.png" />
+    <Content Include="Icons\1020.de-DE.png" />
+    <Content Include="Icons\1020.en-US.png" />
+    <Content Include="Icons\1020.fr-FR.png" />
+    <Content Include="Icons\1020.it-IT.png" />
+    <Content Include="Icons\1021.de-DE.png" />
+    <Content Include="Icons\1021.en-US.png" />
+    <Content Include="Icons\1021.fr-FR.png" />
+    <Content Include="Icons\1021.it-IT.png" />
+    <Content Include="Icons\1022.de-DE.png" />
+    <Content Include="Icons\1022.en-US.png" />
+    <Content Include="Icons\1022.fr-FR.png" />
+    <Content Include="Icons\1022.it-IT.png" />
+    <Content Include="Icons\1023.de-DE.png" />
+    <Content Include="Icons\1023.en-US.png" />
+    <Content Include="Icons\1023.fr-FR.png" />
+    <Content Include="Icons\1023.it-IT.png" />
+    <Content Include="Icons\1024.de-DE.png" />
+    <Content Include="Icons\1024.en-US.png" />
+    <Content Include="Icons\1024.fr-FR.png" />
+    <Content Include="Icons\1024.it-IT.png" />
+    <Content Include="Icons\1025.de-DE.png" />
+    <Content Include="Icons\1025.en-US.png" />
+    <Content Include="Icons\1025.fr-FR.png" />
+    <Content Include="Icons\1025.it-IT.png" />
+    <Content Include="Icons\1026.de-DE.png" />
+    <Content Include="Icons\1026.en-US.png" />
+    <Content Include="Icons\1026.fr-FR.png" />
+    <Content Include="Icons\1026.it-IT.png" />
+    <Content Include="Icons\1027.de-DE.png" />
+    <Content Include="Icons\1027.en-US.png" />
+    <Content Include="Icons\1027.fr-FR.png" />
+    <Content Include="Icons\1027.it-IT.png" />
+    <Content Include="Icons\1028.de-DE.png" />
+    <Content Include="Icons\1028.en-US.png" />
+    <Content Include="Icons\1028.fr-FR.png" />
+    <Content Include="Icons\1028.it-IT.png" />
+    <Content Include="Icons\1029.de-DE.png" />
+    <Content Include="Icons\1029.en-US.png" />
+    <Content Include="Icons\1029.fr-FR.png" />
+    <Content Include="Icons\1029.it-IT.png" />
+    <Content Include="Icons\1030.de-DE.png" />
+    <Content Include="Icons\1030.en-US.png" />
+    <Content Include="Icons\1030.fr-FR.png" />
+    <Content Include="Icons\1030.it-IT.png" />
+    <Content Include="Icons\1031.de-DE.png" />
+    <Content Include="Icons\1031.en-US.png" />
+    <Content Include="Icons\1031.fr-FR.png" />
+    <Content Include="Icons\1031.it-IT.png" />
+    <Content Include="Icons\1101.de-DE.png" />
+    <Content Include="Icons\1101.en-US.png" />
+    <Content Include="Icons\1101.fr-FR.png" />
+    <Content Include="Icons\1101.it-IT.png" />
+    <Content Include="Icons\1102.de-DE.png" />
+    <Content Include="Icons\1102.en-US.png" />
+    <Content Include="Icons\1102.fr-FR.png" />
+    <Content Include="Icons\1102.it-IT.png" />
+    <Content Include="Icons\1103.de-DE.png" />
+    <Content Include="Icons\1103.en-US.png" />
+    <Content Include="Icons\1103.fr-FR.png" />
+    <Content Include="Icons\1103.it-IT.png" />
+    <Content Include="Icons\1104.de-DE.png" />
+    <Content Include="Icons\1104.en-US.png" />
+    <Content Include="Icons\1104.fr-FR.png" />
+    <Content Include="Icons\1104.it-IT.png" />
+    <Content Include="Icons\1105.de-DE.png" />
+    <Content Include="Icons\1105.en-US.png" />
+    <Content Include="Icons\1105.fr-FR.png" />
+    <Content Include="Icons\1105.it-IT.png" />
+    <Content Include="Icons\1106.de-DE.png" />
+    <Content Include="Icons\1106.en-US.png" />
+    <Content Include="Icons\1106.fr-FR.png" />
+    <Content Include="Icons\1106.it-IT.png" />
+    <Content Include="Icons\1107.de-DE.png" />
+    <Content Include="Icons\1107.en-US.png" />
+    <Content Include="Icons\1107.fr-FR.png" />
+    <Content Include="Icons\1107.it-IT.png" />
+    <Content Include="Icons\1108.de-DE.png" />
+    <Content Include="Icons\1108.en-US.png" />
+    <Content Include="Icons\1108.fr-FR.png" />
+    <Content Include="Icons\1108.it-IT.png" />
+    <Content Include="Icons\1109.de-DE.png" />
+    <Content Include="Icons\1109.en-US.png" />
+    <Content Include="Icons\1109.fr-FR.png" />
+    <Content Include="Icons\1109.it-IT.png" />
+    <Content Include="Icons\1110.de-DE.png" />
+    <Content Include="Icons\1110.en-US.png" />
+    <Content Include="Icons\1110.fr-FR.png" />
+    <Content Include="Icons\1110.it-IT.png" />
+    <Content Include="Icons\1111.de-DE.png" />
+    <Content Include="Icons\1111.en-US.png" />
+    <Content Include="Icons\1111.fr-FR.png" />
+    <Content Include="Icons\1111.it-IT.png" />
+    <Content Include="Icons\1112.de-DE.png" />
+    <Content Include="Icons\1112.en-US.png" />
+    <Content Include="Icons\1112.fr-FR.png" />
+    <Content Include="Icons\1112.it-IT.png" />
+    <Content Include="Icons\1113.de-DE.png" />
+    <Content Include="Icons\1113.en-US.png" />
+    <Content Include="Icons\1113.fr-FR.png" />
+    <Content Include="Icons\1113.it-IT.png" />
+    <Content Include="Icons\1114.de-DE.png" />
+    <Content Include="Icons\1114.en-US.png" />
+    <Content Include="Icons\1114.fr-FR.png" />
+    <Content Include="Icons\1114.it-IT.png" />
+    <Content Include="Icons\1115.de-DE.png" />
+    <Content Include="Icons\1115.en-US.png" />
+    <Content Include="Icons\1115.fr-FR.png" />
+    <Content Include="Icons\1115.it-IT.png" />
+    <Content Include="Icons\1116.de-DE.png" />
+    <Content Include="Icons\1116.en-US.png" />
+    <Content Include="Icons\1116.fr-FR.png" />
+    <Content Include="Icons\1116.it-IT.png" />
+    <Content Include="Icons\1117.de-DE.png" />
+    <Content Include="Icons\1117.en-US.png" />
+    <Content Include="Icons\1117.fr-FR.png" />
+    <Content Include="Icons\1117.it-IT.png" />
+    <Content Include="Icons\1118.de-DE.png" />
+    <Content Include="Icons\1118.en-US.png" />
+    <Content Include="Icons\1118.fr-FR.png" />
+    <Content Include="Icons\1118.it-IT.png" />
+    <Content Include="Icons\1119.de-DE.png" />
+    <Content Include="Icons\1119.en-US.png" />
+    <Content Include="Icons\1119.fr-FR.png" />
+    <Content Include="Icons\1119.it-IT.png" />
+    <Content Include="Icons\1120.de-DE.png" />
+    <Content Include="Icons\1120.en-US.png" />
+    <Content Include="Icons\1120.fr-FR.png" />
+    <Content Include="Icons\1120.it-IT.png" />
+    <Content Include="Icons\1121.de-DE.png" />
+    <Content Include="Icons\1121.en-US.png" />
+    <Content Include="Icons\1121.fr-FR.png" />
+    <Content Include="Icons\1121.it-IT.png" />
+    <Content Include="Icons\1122.de-DE.png" />
+    <Content Include="Icons\1122.en-US.png" />
+    <Content Include="Icons\1122.fr-FR.png" />
+    <Content Include="Icons\1122.it-IT.png" />
+    <Content Include="Icons\1123.de-DE.png" />
+    <Content Include="Icons\1123.en-US.png" />
+    <Content Include="Icons\1123.fr-FR.png" />
+    <Content Include="Icons\1123.it-IT.png" />
+    <Content Include="Icons\1124.de-DE.png" />
+    <Content Include="Icons\1124.en-US.png" />
+    <Content Include="Icons\1124.fr-FR.png" />
+    <Content Include="Icons\1124.it-IT.png" />
+    <Content Include="Icons\1125.de-DE.png" />
+    <Content Include="Icons\1125.en-US.png" />
+    <Content Include="Icons\1125.fr-FR.png" />
+    <Content Include="Icons\1125.it-IT.png" />
+    <Content Include="Icons\1126.de-DE.png" />
+    <Content Include="Icons\1126.en-US.png" />
+    <Content Include="Icons\1126.fr-FR.png" />
+    <Content Include="Icons\1126.it-IT.png" />
+    <Content Include="Icons\1127.de-DE.png" />
+    <Content Include="Icons\1127.en-US.png" />
+    <Content Include="Icons\1127.fr-FR.png" />
+    <Content Include="Icons\1127.it-IT.png" />
+    <Content Include="Icons\1128.de-DE.png" />
+    <Content Include="Icons\1128.en-US.png" />
+    <Content Include="Icons\1128.fr-FR.png" />
+    <Content Include="Icons\1128.it-IT.png" />
+    <Content Include="Icons\1129.de-DE.png" />
+    <Content Include="Icons\1129.en-US.png" />
+    <Content Include="Icons\1129.fr-FR.png" />
+    <Content Include="Icons\1129.it-IT.png" />
+    <Content Include="Icons\1130.de-DE.png" />
+    <Content Include="Icons\1130.en-US.png" />
+    <Content Include="Icons\1130.fr-FR.png" />
+    <Content Include="Icons\1130.it-IT.png" />
+    <Content Include="Icons\1201.de-DE.png" />
+    <Content Include="Icons\1201.en-US.png" />
+    <Content Include="Icons\1201.fr-FR.png" />
+    <Content Include="Icons\1201.it-IT.png" />
+    <Content Include="Icons\1202.de-DE.png" />
+    <Content Include="Icons\1202.en-US.png" />
+    <Content Include="Icons\1202.fr-FR.png" />
+    <Content Include="Icons\1202.it-IT.png" />
+    <Content Include="Icons\1203.de-DE.png" />
+    <Content Include="Icons\1203.en-US.png" />
+    <Content Include="Icons\1203.fr-FR.png" />
+    <Content Include="Icons\1203.it-IT.png" />
+    <Content Include="Icons\1204.de-DE.png" />
+    <Content Include="Icons\1204.en-US.png" />
+    <Content Include="Icons\1204.fr-FR.png" />
+    <Content Include="Icons\1204.it-IT.png" />
+    <Content Include="Icons\1205.de-DE.png" />
+    <Content Include="Icons\1205.en-US.png" />
+    <Content Include="Icons\1205.fr-FR.png" />
+    <Content Include="Icons\1205.it-IT.png" />
+    <Content Include="Icons\1206.de-DE.png" />
+    <Content Include="Icons\1206.en-US.png" />
+    <Content Include="Icons\1206.fr-FR.png" />
+    <Content Include="Icons\1206.it-IT.png" />
+    <Content Include="Icons\1207.de-DE.png" />
+    <Content Include="Icons\1207.en-US.png" />
+    <Content Include="Icons\1207.fr-FR.png" />
+    <Content Include="Icons\1207.it-IT.png" />
+    <Content Include="Icons\1208.de-DE.png" />
+    <Content Include="Icons\1208.en-US.png" />
+    <Content Include="Icons\1208.fr-FR.png" />
+    <Content Include="Icons\1208.it-IT.png" />
+    <Content Include="Icons\1209.de-DE.png" />
+    <Content Include="Icons\1209.en-US.png" />
+    <Content Include="Icons\1209.fr-FR.png" />
+    <Content Include="Icons\1209.it-IT.png" />
+    <Content Include="Icons\1210.de-DE.png" />
+    <Content Include="Icons\1210.en-US.png" />
+    <Content Include="Icons\1210.fr-FR.png" />
+    <Content Include="Icons\1210.it-IT.png" />
+    <Content Include="Icons\1211.de-DE.png" />
+    <Content Include="Icons\1211.en-US.png" />
+    <Content Include="Icons\1211.fr-FR.png" />
+    <Content Include="Icons\1211.it-IT.png" />
+    <Content Include="Icons\1212.de-DE.png" />
+    <Content Include="Icons\1212.en-US.png" />
+    <Content Include="Icons\1212.fr-FR.png" />
+    <Content Include="Icons\1212.it-IT.png" />
+    <Content Include="Icons\1213.de-DE.png" />
+    <Content Include="Icons\1213.en-US.png" />
+    <Content Include="Icons\1213.fr-FR.png" />
+    <Content Include="Icons\1213.it-IT.png" />
+    <Content Include="Icons\1214.de-DE.png" />
+    <Content Include="Icons\1214.en-US.png" />
+    <Content Include="Icons\1214.fr-FR.png" />
+    <Content Include="Icons\1214.it-IT.png" />
+    <Content Include="Icons\1215.de-DE.png" />
+    <Content Include="Icons\1215.en-US.png" />
+    <Content Include="Icons\1215.fr-FR.png" />
+    <Content Include="Icons\1215.it-IT.png" />
+    <Content Include="Icons\1216.de-DE.png" />
+    <Content Include="Icons\1216.en-US.png" />
+    <Content Include="Icons\1216.fr-FR.png" />
+    <Content Include="Icons\1216.it-IT.png" />
+    <Content Include="Icons\1217.de-DE.png" />
+    <Content Include="Icons\1217.en-US.png" />
+    <Content Include="Icons\1217.fr-FR.png" />
+    <Content Include="Icons\1217.it-IT.png" />
+    <Content Include="Icons\1218.de-DE.png" />
+    <Content Include="Icons\1218.en-US.png" />
+    <Content Include="Icons\1218.fr-FR.png" />
+    <Content Include="Icons\1218.it-IT.png" />
+    <Content Include="Icons\1219.de-DE.png" />
+    <Content Include="Icons\1219.en-US.png" />
+    <Content Include="Icons\1219.fr-FR.png" />
+    <Content Include="Icons\1219.it-IT.png" />
+    <Content Include="Icons\1220.de-DE.png" />
+    <Content Include="Icons\1220.en-US.png" />
+    <Content Include="Icons\1220.fr-FR.png" />
+    <Content Include="Icons\1220.it-IT.png" />
+    <Content Include="Icons\1221.de-DE.png" />
+    <Content Include="Icons\1221.en-US.png" />
+    <Content Include="Icons\1221.fr-FR.png" />
+    <Content Include="Icons\1221.it-IT.png" />
+    <Content Include="Icons\1222.de-DE.png" />
+    <Content Include="Icons\1222.en-US.png" />
+    <Content Include="Icons\1222.fr-FR.png" />
+    <Content Include="Icons\1222.it-IT.png" />
+    <Content Include="Icons\1223.de-DE.png" />
+    <Content Include="Icons\1223.en-US.png" />
+    <Content Include="Icons\1223.fr-FR.png" />
+    <Content Include="Icons\1223.it-IT.png" />
+    <Content Include="Icons\1224.de-DE.png" />
+    <Content Include="Icons\1224.en-US.png" />
+    <Content Include="Icons\1224.fr-FR.png" />
+    <Content Include="Icons\1224.it-IT.png" />
+    <Content Include="Icons\1225.de-DE.png" />
+    <Content Include="Icons\1225.en-US.png" />
+    <Content Include="Icons\1225.fr-FR.png" />
+    <Content Include="Icons\1225.it-IT.png" />
+    <Content Include="Icons\1226.de-DE.png" />
+    <Content Include="Icons\1226.en-US.png" />
+    <Content Include="Icons\1226.fr-FR.png" />
+    <Content Include="Icons\1226.it-IT.png" />
+    <Content Include="Icons\1227.de-DE.png" />
+    <Content Include="Icons\1227.en-US.png" />
+    <Content Include="Icons\1227.fr-FR.png" />
+    <Content Include="Icons\1227.it-IT.png" />
+    <Content Include="Icons\1228.de-DE.png" />
+    <Content Include="Icons\1228.en-US.png" />
+    <Content Include="Icons\1228.fr-FR.png" />
+    <Content Include="Icons\1228.it-IT.png" />
+    <Content Include="Icons\1229.de-DE.png" />
+    <Content Include="Icons\1229.en-US.png" />
+    <Content Include="Icons\1229.fr-FR.png" />
+    <Content Include="Icons\1229.it-IT.png" />
+    <Content Include="Icons\1230.de-DE.png" />
+    <Content Include="Icons\1230.en-US.png" />
+    <Content Include="Icons\1230.fr-FR.png" />
+    <Content Include="Icons\1230.it-IT.png" />
+    <Content Include="Icons\1231.de-DE.png" />
+    <Content Include="Icons\1231.en-US.png" />
+    <Content Include="Icons\1231.fr-FR.png" />
+    <Content Include="Icons\1231.it-IT.png" />
+    <Content Include="Icons\anonymous.png" />
+    <Content Include="Icons\appbar.add.png" />
+    <Content Include="Icons\appbar.feature.search.rest.png" />
+    <Content Include="Icons\appbar.marketplace.dark.png" />
+    <Content Include="Icons\appbar.marketplace.light.png" />
+    <Content Include="Icons\appbar.refresh.rest.png" />
+    <Content Include="Icons\appbar.twitter.bird.dark.png" />
+    <Content Include="Icons\appbar.twitter.bird.light.png" />
+    <Content Include="Icons\weekc_300.png" />
+    <Content Include="README_FIRST.txt" />
+    <Content Include="SubmissionInfo\weekc_scr1_wxga.png" />
+    <Content Include="SubmissionInfo\weekc_scr2_wxga.png" />
+    <Content Include="SubmissionInfo\weekc_scr3_wxga.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <None Include="SubmissionInfo\ManualTestResults.xml" />
+    <None Include="SubmissionInfo\Settings.xml" />
+    <None Include="SubmissionInfo\WCtranslate.xlsx" />
+    <None Include="SubmissionInfo\weekc icon\110166_1616940_106751_sourcefile.ai" />
+    <None Include="SubmissionInfo\weekc icon\110166_1616940_106751_vector.eps" />
+    <None Include="SubmissionInfo\weekc icon\110166_1624037_106751_sourcefile.ai" />
+    <None Include="SubmissionInfo\weekc icon\110166_1624037_106751_vector.eps" />
+    <None Include="SubmissionInfo\weekc_173.png" />
+    <None Include="SubmissionInfo\weekc_200.png" />
+    <None Include="SubmissionInfo\weekc_99.png" />
+    <None Include="SubmissionInfo\weekc_scr1.png" />
+    <None Include="SubmissionInfo\weekc_scr2.png" />
+    <None Include="SubmissionInfo\weekc_scr3.png" />
+    <Content Include="Icons\ApplicationIconSmallWhite.png" />
+    <Content Include="Icons\ApplicationIconSmallBlack.png" />
+    <Content Include="Icons\zoom.png" />
+    <Content Include="SubmissionInfo\screenshot 1.png" />
+    <Content Include="SubmissionInfo\screenshot 2.png" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1616929_106751_image.png" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1616929_106751_thumbnail.jpg" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1616934_106751_image.png" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1616934_106751_thumbnail.jpg" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1616935_106751_image.png" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1616935_106751_thumbnail.jpg" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1616936_106751_image.png" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1616936_106751_thumbnail.jpg" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1616940_106751_image.png" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1616940_106751_thumbnail.jpg" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1624033_106751_image.png" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1624035_106751_image.png" />
+    <Content Include="SubmissionInfo\weekc icon\110166_1624037_106751_image.png" />
+    <Content Include="SubmissionInfo\weekc icon\WC new icon test.png" />
+    <Content Include="SubmissionInfo\weekc_1000.png" />
+    <Content Include="SubmissionInfo\weekc_300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Languages\Strings.de-DE.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.de-DE.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Strings.fr-FR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.fr-FR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Languages\Strings.it-IT.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.it-IT.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\weekcc\weekcc.csproj">
+      <Project>{7E50EDC7-44B4-4477-AC6D-4D174D38E3AB}</Project>
+      <Name>weekcc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\weekcs\weekcs.csproj">
+      <Project>{5B95BCD9-995D-45DD-858C-FE3823B8A186}</Project>
+      <Name>weekcs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

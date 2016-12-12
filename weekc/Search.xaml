@@ -1,0 +1,149 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="weekc.Search"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"    
+    xmlns:myApp="clr-namespace:weekc"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    toolkit:TiltEffect.IsTiltEnabled="True"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded" LayoutUpdated="PhoneApplicationPage_LayoutUpdated">
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <phone:PhoneApplicationPage.Resources>
+        <myApp:StartEndTimeConverter x:Key="StartEndTimeConverter" />
+        <myApp:SubjectConverter x:Key="SubjectConverter" />
+        <myApp:AccountConverter x:Key="AccountConverter" />
+        <SolidColorBrush x:Key="SearchPanelBackgroundBrush"
+            Color="{StaticResource PhoneBackgroundColor}" Opacity="0.8" />
+        <DataTemplate x:Key="ApptsTemplate">
+            <StackPanel Orientation="Vertical" Margin="0, 0, 0, 10">
+                <TextBlock Text="{Binding Converter={StaticResource SubjectConverter}}" Style="{StaticResource PhoneTextLargeStyle}" TextWrapping="Wrap" />
+                <TextBlock Style="{StaticResource PhoneTextAccentStyle}" TextWrapping="Wrap">
+                            <Run Text="{Binding Converter={StaticResource StartEndTimeConverter}}" />
+                            <LineBreak />
+                            <Run Text="{Binding Location}" />
+                </TextBlock>
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <TextBlock Text="{Binding Path=Strings.CalendarLabel, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextSubtleStyle}" />
+                    <TextBlock Margin="-6, 0, 0, 0" Text="{Binding Converter={StaticResource AccountConverter}}" Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" />
+                </StackPanel>
+                <Line X1="0" X2="1" Stretch="Fill" Stroke="{StaticResource PhoneDisabledBrush}" Margin="10, 0, 10, 0" />
+            </StackPanel>
+        </DataTemplate>
+        <Storyboard x:Name="SearchPanelDown" Completed="SearchPanelDown_Completed">
+        	<DoubleAnimation From="-350" To="0" Duration="0:0:1"
+				Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="SearchPanel">
+        		<DoubleAnimation.EasingFunction>
+        			<CircleEase EasingMode="EaseIn" />
+				</DoubleAnimation.EasingFunction>
+        	</DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="SearchPanelUp" Completed="SearchPanelUp_Completed">
+        	<DoubleAnimation From="0" To="-350" Duration="0:0:0.5"
+				Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="SearchPanel">
+        		<DoubleAnimation.EasingFunction>
+        			<CircleEase EasingMode="EaseIn" />
+				</DoubleAnimation.EasingFunction>
+        	</DoubleAnimation>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Canvas.ZIndex="1" Grid.Row="0" Background="{StaticResource SearchPanelBackgroundBrush}" Name="SearchPanel"
+                RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+            <Border.RenderTransform>
+                <CompositeTransform/>
+            </Border.RenderTransform>
+            <StackPanel x:Name="ContentPanel" Margin="12,0,12,50" >
+                <TextBlock Text="{Binding Path=Strings.SearchStringLabel, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextSubtleStyle}" />
+                <TextBox Name="SearchTextBox" KeyDown="SearchTextBox_KeyDown" />
+                <toolkit:ListPicker Name="SearchRangeList" Header="{Binding Path=Strings.SearchRangeLabel, Source={StaticResource LocalizedStrings}}" />
+                <myApp:ListPickerEx Header="{Binding Path=Strings.SearchAccountsLabel, Source={StaticResource LocalizedStrings}}" 
+	                                    SelectionMode="Multiple" 
+	                                    FullModeHeader="{Binding Path=Strings.SearchAccountsTitle, Source={StaticResource LocalizedStrings}}" 
+	                                    CacheMode="BitmapCache"
+	                                    x:Name="AccountsList">
+                </myApp:ListPickerEx>
+            </StackPanel>
+        </Border>
+        <Grid x:Name="GridAppts" Canvas.ZIndex="0" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+                <StackPanel Orientation="Horizontal">
+                    <Image Name="TitleImage" Stretch="Fill" Width="30" Height="30" />
+                    <TextBlock Text="WEEK CALENDAR" Style="{StaticResource PhoneTextNormalStyle}" RenderTransformOrigin="0.5,0.5" Margin="1, 0, 0, 0">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+                <TextBlock x:Name="PageTitle" Text="{Binding Path=Strings.SearchTitle, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <Border x:Name="BorderAppts" Margin="12,0,12,0" >
+                    <ScrollViewer>
+                    <ListBox ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectionChanged="ListBoxAppts_SelectionChanged"
+                             Name="ListBoxAppts" ItemsSource="{Binding Path=WeekAppts}" ItemTemplate="{StaticResource ApptsTemplate}">
+                                <ListBox.ItemContainerStyle>
+                                    <Style TargetType="ListBoxItem">
+                                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                    </Style>
+                                </ListBox.ItemContainerStyle>
+                                <ListBox.Template>
+                                    <ControlTemplate>
+                                        <ItemsPresenter />
+                                    </ControlTemplate>
+                                </ListBox.Template>
+                            </ListBox>
+                    </ScrollViewer>
+                </Border>
+                <Border x:Name="BorderNoAppts" Margin="22,0,12,0" >
+                    <TextBlock x:Name="TextNoAppts" FontSize="{StaticResource PhoneFontSizeMediumLarge}" TextWrapping="Wrap" />
+                </Border>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True"  IsMenuEnabled="True" Opacity="0.7">
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+</phone:PhoneApplicationPage>

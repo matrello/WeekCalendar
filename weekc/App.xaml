@@ -1,0 +1,64 @@
+﻿<Application 
+    x:Class="weekc.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:Languages="clr-namespace:weekc.Languages"
+    xmlns:trial="clr-namespace:SlickThought.Phone;assembly=SlickThought.Phone">
+
+    <Application.Resources>
+        <local:LocalizedStrings xmlns:local ="clr-namespace:weekc.Languages" x:Key="LocalizedStrings" />
+        <SolidColorBrush x:Key="EventLocationTextBrush" Color="{StaticResource PhoneSubtleColor}" />
+        <Style x:Key="EventTextStyle" TargetType="TextBlock">
+            <Setter Property="TextWrapping" Value="NoWrap" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+        <Style x:Key="EventTextStyleSmall" TargetType="TextBlock">
+            <Setter Property="TextWrapping" Value="NoWrap" />
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+        <Style x:Key="AllDayEventTextStyle" TargetType="TextBlock">
+            <Setter Property="TextWrapping" Value="NoWrap" />
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+        <ControlTemplate x:Key="EventCell">
+            <Border BorderThickness="0, 0, 0, 0" Margin="{Binding BorderMargin}"
+                    BorderBrush="{Binding BorderBrush}" Background="{Binding Background}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle HorizontalAlignment="Left" Width="10" Stroke="{Binding BorderBrush}" Margin="0, 1, 0, 1"
+                        StrokeThickness="{Binding StrokeThickness}" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" />
+                    <TextBlock Style="{Binding TextStyle}" Foreground="{Binding BorderBrush}"
+                        TextWrapping="Wrap" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1">
+                        <Run Text="{Binding Subject}" Foreground="{Binding BorderBrush}" />
+                        <LineBreak />
+                        <Run Text="{Binding Location}" Foreground="{StaticResource EventLocationTextBrush}" />                        
+                    </TextBlock>
+                    <Path xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' Visibility="{Binding ArrowVisible}"
+                        Data='M 10 0 L 10 10 0 5 10 0 Z' Fill="{Binding BorderBrush}"
+                        Stroke="{Binding BorderBrush}" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" />
+                </Grid>
+            </Border>            
+        </ControlTemplate>
+    </Application.Resources>
+    
+    <Application.ApplicationLifetimeObjects>
+        <trial:TrialManager RunAsTrial="false" DoNotPersist="False" >
+            <trial:TrialManager.ApplicationPolicy>
+                <trial:UsageExpirationPolicy MaxUsage="10" />
+            </trial:TrialManager.ApplicationPolicy>
+        </trial:TrialManager>
+        <shell:PhoneApplicationService 
+            Launching="Application_Launching" Closing="Application_Closing" 
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</Application>

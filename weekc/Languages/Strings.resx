@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutItem" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="AllDayLabel" xml:space="preserve">
+    <value>all day</value>
+  </data>
+  <data name="AttendeesItem" xml:space="preserve">
+    <value>attendees</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Calendar:</value>
+  </data>
+  <data name="CopyrightLabel" xml:space="preserve">
+    <value>Developed by Francesco Martire.</value>
+  </data>
+  <data name="DayBeginsLabel" xml:space="preserve">
+    <value>Day begins at</value>
+  </data>
+  <data name="DayEndsLabel" xml:space="preserve">
+    <value>Day ends at</value>
+  </data>
+  <data name="DetailsItem" xml:space="preserve">
+    <value>details</value>
+  </data>
+  <data name="DetailsTitleAppointment" xml:space="preserve">
+    <value>APPOINTMENT</value>
+  </data>
+  <data name="DetailsTitleMeeting" xml:space="preserve">
+    <value>MEETING</value>
+  </data>
+  <data name="StoreLabel" xml:space="preserve">
+    <value>store</value>
+    <comment>new</comment>
+  </data>
+  <data name="NoTitleLabel" xml:space="preserve">
+    <value>(no title)</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="OrganizerLabel" xml:space="preserve">
+    <value>Meeting organizer</value>
+  </data>
+  <data name="PrivateLabel" xml:space="preserve">
+    <value>(personal)</value>
+  </data>
+  <data name="RefreshButton" xml:space="preserve">
+    <value>refresh</value>
+  </data>
+  <data name="SettingsItem" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="ShowWeekendsLabel" xml:space="preserve">
+    <value>Show weekends</value>
+  </data>
+  <data name="ShowWeekNumberLabel" xml:space="preserve">
+    <value>Show week number</value>
+  </data>
+  <data name="SupportLabel" xml:space="preserve">
+    <value>mail the author</value>
+    <comment>changed</comment>
+  </data>
+  <data name="TaskLabel" xml:space="preserve">
+    <value>Update of the live tile on homescreen.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="TodayButton" xml:space="preserve">
+    <value>today</value>
+  </data>
+  <data name="TranslationLabel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TrialExpired" xml:space="preserve">
+    <value>This trial version has expired. If you liked this application, support its development buying it on the Store.</value>
+  </data>
+  <data name="TrialLast" xml:space="preserve">
+    <value>This is the last trial run.</value>
+  </data>
+  <data name="TrialLeft" xml:space="preserve">
+    <value>You have {0} trial runs left.</value>
+  </data>
+  <data name="TrialLicensed" xml:space="preserve">
+    <value>This is a licensed version: thank you for supporting this app! Do you find it useful? Then spread the word all around! :-)</value>
+    <comment>changed</comment>
+  </data>
+  <data name="TrialOne" xml:space="preserve">
+    <value>You have one trial run left.</value>
+  </data>
+  <data name="TrialText" xml:space="preserve">
+    <value>This is a full featured trial version. If you like it, support its development buying it on the Store.</value>
+    <comment>changed</comment>
+  </data>
+  <data name="VersionLabel" xml:space="preserve">
+    <value>Version</value>
+    <comment>changed</comment>
+  </data>
+  <data name="WeekShortLabel" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="BetaLabel" xml:space="preserve">
+    <value>This is a BETA VERSION released for testing purposes. To send comments, tap the feedback and support button. Thank you for testing this product.</value>
+  </data>
+  <data name="LittleWatsonMessage" xml:space="preserve">
+    <value>A problem occurred the last time you ran Week Calendar. Would you like to send an email to report it? The message is auto generated and will help the author to remove the bug.</value>
+  </data>
+  <data name="LittleWatsonTitle" xml:space="preserve">
+    <value>Problem Report</value>
+  </data>
+  <data name="AccountsTitle" xml:space="preserve">
+    <value>accounts</value>
+  </data>
+  <data name="AccentColorBlue" xml:space="preserve">
+    <value>blue</value>
+  </data>
+  <data name="AccentColorBrown" xml:space="preserve">
+    <value>brown</value>
+  </data>
+  <data name="AccentColorGreen" xml:space="preserve">
+    <value>green</value>
+  </data>
+  <data name="AccentColorLabel" xml:space="preserve">
+    <value>accent color</value>
+  </data>
+  <data name="AccentColorLime" xml:space="preserve">
+    <value>lime</value>
+  </data>
+  <data name="AccentColorMagenta" xml:space="preserve">
+    <value>magenta</value>
+  </data>
+  <data name="AccentColorMango" xml:space="preserve">
+    <value>mango</value>
+  </data>
+  <data name="AccentColorPink" xml:space="preserve">
+    <value>pink</value>
+  </data>
+  <data name="AccentColorPurple" xml:space="preserve">
+    <value>purple</value>
+  </data>
+  <data name="AccentColorRed" xml:space="preserve">
+    <value>red</value>
+  </data>
+  <data name="AccentColorTeal" xml:space="preserve">
+    <value>teal</value>
+  </data>
+  <data name="AccountsChooseTitle" xml:space="preserve">
+    <value>Choose the color</value>
+  </data>
+  <data name="LimitationsLabel" xml:space="preserve">
+    <value>User reviews are important: if you have any problem or complaint, please send me an email before to give Week Calendar a low rate.</value>
+    <comment>changed</comment>
+  </data>
+  <data name="ShowPrivateLabel" xml:space="preserve">
+    <value>Show private appointments</value>
+  </data>
+  <data name="SearchTitle" xml:space="preserve">
+    <value>search</value>
+  </data>
+  <data name="SearchAccountsLabel" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+  <data name="SearchAccountsTitle" xml:space="preserve">
+    <value>SEARCH ON THESE ACCOUNTS</value>
+  </data>
+  <data name="SearchStringLabel" xml:space="preserve">
+    <value>Enter the string to search for</value>
+  </data>
+  <data name="SearchRangeThisMonth" xml:space="preserve">
+    <value>this month</value>
+  </data>
+  <data name="SearchRangeLast3" xml:space="preserve">
+    <value>last 3 months</value>
+  </data>
+  <data name="SearchRangeNext3" xml:space="preserve">
+    <value>next 3 months</value>
+  </data>
+  <data name="SearchRangeLabel" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="SearchDefaultText" xml:space="preserve">
+    <value>tap the search icon, type a string and press enter.</value>
+  </data>
+  <data name="SearchNoAppts" xml:space="preserve">
+    <value>no appointments found. tap the search icon, type a string and press enter.</value>
+  </data>
+  <data name="ZoomButton" xml:space="preserve">
+    <value>zoom</value>
+  </data>
+  <data name="ZoomOnStartLabel" xml:space="preserve">
+    <value>Zoom on start</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>new</value>
+    <comment>changed</comment>
+  </data>
+  <data name="TrialProceed" xml:space="preserve">
+    <value>proceed with trial</value>
+    <comment>new</comment>
+  </data>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+</root>
